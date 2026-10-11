@@ -113,6 +113,14 @@ out = run(["--chapter", "7", "--room", "s3", "--nowipe"], 780,
           "250-300:l,264-265:x,302-330:u,332-344:j,332-346:l,400-415:l,440-760:r,523-535:j", what="3A's key and locked door")
 check("room 0x-a " in out and " deaths 0 " in out, f"3A's start room was not crossed with its key: {out[-160:]}")
 
+# 3A's lobby (0x-a): Oshiro's cutscene, played through (OK pressed through) or skipped from the pause menu, opens his
+# ghost door (MrOshiroDoor) on the right, the way on to 00-a
+for how, frames, keys in (("played", 2250, ",".join(f"{f}-{f + 2}:o" for f in range(300, 1900, 12)) + ",2000-2240:r"),
+                          ("skipped", 650, "200-201:p,215-216:d,230-231:o,400-640:r")):
+    out = run(["--chapter", "7", "--room", "0x-a", "--nowipe", "--at", "160,152"], frames, "20-21:x," + keys,
+              what=f"3A's lobby ({how})")
+    check("room 00-a " in out, f"3A's lobby: Oshiro's door stayed shut, the cutscene {how}: {out[-160:]}")
+
 # 5A's c-10: its two touch switches (below the middle cracked block, on top of it) open the temple gate (TouchSwitches)
 # up on the right, the way to c-12
 out = run(["--chapter", "13", "--room", "c-10", "--nowipe"], 520,

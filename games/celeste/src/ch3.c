@@ -2688,15 +2688,14 @@ static bool lobby_event(void *ctx, int index) {   /* ZoomOut */
   EV_WAIT(0.2f);
   EV_END;
 }
-static void gdoor_open(Ent *e, bool instant);
-static void lobby_doors(bool instant) {   /* every MrOshiroDoor: Open / InstantOpen */
+static void lobby_doors(bool instant) {   /* every MrOshiroDoor (a GDOOR marked oshiro): Open / InstantOpen */
   for (int i = 0; i < g_nents; i++)
-    if (g_ents[i].cls && g_ents[i].dead != 1 && g_ents[i].cls->name && !strcmp(g_ents[i].cls->name, "oshirodoor")) gdoor_open(&g_ents[i], instant);
+    if (g_ents[i].cls == &GDOOR && g_ents[i].dead != 1 && ST(&g_ents[i], GDoor)->oshiro) gdoor_open(&g_ents[i], instant);
 }
 static void lobby_end(Ent *e, bool skipped) {
   Lobby *s = ST(e, Lobby);
   player_free();
-  if (skipped) lobby_doors(true);
+  lobby_doors(skipped);   /* skipped: InstantOpen (played through, Open has opened them already: this does nothing) */
   g_level.lighting = s->start_light;
   level_set_flag("oshiro_resort_talked_1", true);
   if (skipped && s->osh->cls == &OSH3) ent_remove(s->osh);

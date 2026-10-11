@@ -393,7 +393,7 @@ Upsilon support is new. If it doesn't work on your calculator, please [email me]
 - The **Nunito** and **Rammetto One** fonts, under the SIL Open Font License ([LICENSES](LICENSES)).
 - **reversal_lava63**, a beta tester who plays NumPlay's apps on a real calculator and reports what's wrong.
 - **[Gabriel](https://github.com/tomcalif9-stack)**, who made the home screen's moving backgrounds, translated NumPlay into French first, and tests it on Upsilon and an N0115.
-- Everyone who reported a bug: **NEE** ([reversallava63](https://github.com/reversallava63)), **Gabriel**, **[briac134](https://github.com/briac134)**, **[Raphanobie](https://github.com/Raphanobie)**, **[zbigzo](https://github.com/zbigzo)**, **Yacine**, **Ewnet Tewodros** and **PelicanMan75**. Thank you!
+- Everyone who reported a bug: **NEE** ([reversallava63](https://github.com/reversallava63)), **Gabriel**, **[briac134](https://github.com/briac134)**, **[Raphanobie](https://github.com/Raphanobie)**, **[zbigzo](https://github.com/zbigzo)**, **Yacine**, **Ewnet Tewodros**, **PelicanMan75** and **[Spykube](https://github.com/Spykube)**. Thank you!
 - The **Fusion Pixel** font by TakWolf (with glyphs from **Ark Pixel**), under the SIL Open Font License ([license](LICENSES/OFL-1.1-Fusion-Pixel.txt)), for the Chinese letters.
 - **[Upsilon](https://github.com/UpsilonNumworks/Upsilon)**, the custom software NumPlay-Upsilon.nwa runs on.
 
