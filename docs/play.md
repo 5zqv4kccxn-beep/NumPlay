@@ -116,6 +116,29 @@ Choose Climb, then a chapter, then Start. Madeline can dash once in the air (twi
 
 <br clear="right">
 
+## The Final Earth 2
+
+<img src="media/finalearth2.gif" width="320" align="right" alt="The Final Earth 2: building a house on a city in free play">
+
+The Final Earth 2 comes as its own app, `FinalEarth2.nwa`: it is too big to share the calculator with NumPlay.
+
+| Key | What it does |
+| --- | --- |
+| **Arrows** | Move the cursor, or the focus in menus and windows |
+| **shift** + **arrows** | Move the view faster |
+| **OK** | Open what is under the cursor, choose, build here |
+| **Back** | Close, stop building, open the game menu |
+| **toolbox** | Open or close the build menu |
+| **var** | Go to the buttons and materials at the bottom right, and back |
+| **alpha** | Pause |
+| **+** and **-** | Zoom in and out |
+| **⌫** | Destroy the building under the cursor |
+| **Home** | Save and quit |
+
+Choose a scenario or a free play map. Build woodcutters and stone mines for materials, farms for food and houses for your citizens; buildings stack on top of each other. In the build menu, left and right go through the buildings, up and down change the category, and **OK** picks one; then **OK** builds where the cursor is, and **Back** goes back to the menu. Each goal of a scenario tells you what to do next, and **?** shows it again. On the speed button, **OK** switches between normal and double speed, and **shift** with **OK** goes through all five speeds. Home saves and quits, and the title then offers Continue. Your city is also copied into `finalearth2_saves.py`, so installing the app again doesn't erase it.
+
+<br clear="right">
+
 ## NumDrive
 
 <img src="media/numdrive.gif" width="320" align="right" alt="NumDrive gameplay">

@@ -29,6 +29,8 @@ ALONE = {
                      "NumPlay: install it on its own"),
     "championisland": ("Champion Island", "the Doodle Champion Island Games. Too big to share the calculator with "
                        "NumPlay: install it on its own"),
+    "finalearth2": ("The Final Earth 2", "build a city on floating islands in space, every scenario and free play map. "
+                    "Too big to share the calculator with NumPlay: install it on its own"),
 }
 VARIANTS = [
     ("NumPlay-Invisible.nwa", "The same app, hidden: a blank icon with no name"),
