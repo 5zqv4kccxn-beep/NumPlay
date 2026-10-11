@@ -196,6 +196,7 @@ typedef struct {
   uint8_t dir, n, cassette, on;   /* cassette: on a cassette block (its colors, enabled or disabled: cassette_tint) */
   uint16_t tex;
   int16_t gox, goy;               /* and its group's origin (SetOrigins), from the spikes */
+  uint8_t tentacles, half;        /* the "tentacles" type: n tentacles of 16 pixels, and half: one more at the end */
 } Spikes;
 static void spikes_on_player(Ent *e, Player *p) {
   Spikes *s = ST(e, Spikes);
@@ -218,8 +219,43 @@ static bool spikes_riding(Ent *e, Ent *p) {
   }
   return collide_ent_at(e, e->x + dx, e->y + dy, p) && !collide_ent_at(e, e->x, e->y, p);
 }
+/* Spikes.AddTentacle: the "tentacles" type (the Mirror Temple's other side) draws a tentacle sprite each 16 pixels, and
+ * one more at the end of an odd number of 8; each plays one of the bank's three loops from its own frame, turned to face
+ * out of the wall, mirrored or not (picked at random in the game: here from where it is, so nothing is kept) */
+static uint32_t tentacle_hash(uint32_t x) {
+  x ^= x >> 16, x *= 0x7FEB352Du, x ^= x >> 15, x *= 0x846CA68Bu, x ^= x >> 16;
+  return x;
+}
+static void tentacles_render(Ent *e, Spikes *s) {
+  static const float rot[] = {[DIR_UP] = 0, [DIR_DOWN] = PI_F, [DIR_LEFT] = PI_F * 1.5f, [DIR_RIGHT] = PI_F * 0.5f};
+  for (int k = 0; k < s->n + s->half; k++) {
+    float i = k < s->n ? (float)k : s->n - 0.5f;
+    uint32_t h = tentacle_hash((uint32_t)(int)e->x * 73856093u ^ (uint32_t)(int)e->y * 19349663u ^ (uint32_t)k * 83492791u);
+    Sprite sp;
+    spr_init(&sp, SB_tentacles);
+    spr_play(&sp, A_tentacles_0 + (int)(h % 3), true);
+    int nf = spr_frames(&sp);
+    if (nf > 0) spr_play_offset(&sp, sp.anim, (int)((h >> 8) % (uint32_t)nf + (uint32_t)(g_level.time_active / 0.08f)) % nf);
+    sp.flipx = (h >> 4) & 1;   /* Scale.X = -1 or 1 */
+    sp.rot = rot[s->dir];
+    if (s->cassette) sp.tint = cassette_tint(ent_platform(e), s->on);
+    float x = e->x, y = e->y;
+    switch (s->dir) {
+      case DIR_UP: x += (i + .5f) * 16, y += 1; break;
+      case DIR_DOWN: x += (i + .5f) * 16, y -= 1; break;
+      case DIR_RIGHT: y += (i + .5f) * 16, x -= 1; break;
+      case DIR_LEFT: y += (i + .5f) * 16, x += 1; break;
+    }
+    spr_draw(&sp, x + e->shakex, y + e->shakey);
+  }
+}
+
 static void spikes_render(Ent *e) {
   Spikes *s = ST(e, Spikes);
+  if (s->tentacles) {
+    tentacles_render(e, s);
+    return;
+  }
   Tex t;
   if (!tex_get(s->tex, &t)) return;
   for (int j = 0; j < s->n; j++) {
@@ -283,6 +319,10 @@ static void new_spikes(const EData *d, int dir) {
   static const char *names[] = {"default", "outline", "cliffside", "reflection"};
   static const char *dirs[] = {"up", "down", "left", "right"};
   const char *t = (*type && strcmp(type, "default")) ? type : names[area_spike()];
+  if (!strcmp(t, "tentacles")) {   /* (Spikes.Added) */
+    s->tentacles = 1, s->n = (uint8_t)(size / 16), s->half = (size / 8) % 2;
+    return;
+  }
   char path[48], tmp[24];
   path2(tmp, t, "_", -1);
   path2(path, "danger/spikes/", path2(tmp + 12 - 12, tmp, dirs[dir], -1), 0);
