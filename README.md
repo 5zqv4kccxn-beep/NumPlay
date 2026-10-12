@@ -179,7 +179,8 @@ Filmed on my own calculator, no emulator.
 - [ ] Sonic the Hedgehog
 - [ ] Subway Surfers
 - [ ] The Nether and the End in NumBlocks
-- [ ] Add support for Enlarged Extra Apps
+- [ ] A customizer website: pick the games you want in your launcher, with Enlarged Extra Apps support to fit several big games, or big and small ones together
+- [ ] A Game Boy emulator: upload your own ROMs on the website and get a .nwa app that plays them
 
 ## Credits
 
