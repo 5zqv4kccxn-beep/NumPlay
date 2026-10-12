@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>17 free games for your NumWorks calculator, in one app.</b><br>
-  Plus <b>The Final Earth 2</b>, <b>Hollow Knight</b>, <b>Celeste</b> and <b>Champion Island</b>, four big games that come as apps of their own.<br>
+  Plus <b>NumPowder</b>, <b>The Final Earth 2</b>, <b>Hollow Knight</b>, <b>Celeste</b> and <b>Champion Island</b>, five big games that come as apps of their own.<br>
   For the N0110, N0115 and N0120, in English, <a href="#in-french-and-chinese">French and Chinese</a>, and for <a href="#on-upsilon">Upsilon</a>.
 </p>
 
@@ -29,7 +29,7 @@
 </p>
 
 <p align="center">
-  <b>New: <a href="#new-the-final-earth-2">The Final Earth 2</a></b>, a city on floating islands in space. &nbsp;<b>And <a href="#new-hollow-knight">Hollow Knight</a></b>, from King's Pass to Hornet in Greenpath.
+  <b>New: <a href="#new-numpowder">NumPowder</a></b>, The Powder Toy on the calculator. &nbsp;<b>And <a href="#new-the-final-earth-2">The Final Earth 2</a></b>, a city on floating islands in space.
 </p>
 
 <p align="center">
@@ -41,6 +41,29 @@
 NumPlay is open source and completely free, and it took a lot of work to make. If you like it, please click **Star** at the top of this page. It only takes a second, and it helps other people find NumPlay.
 
 Want a game that isn't here? I'm open to requests: email me at [masonchen204@gmail.com](mailto:masonchen204@gmail.com).
+
+## New: NumPowder
+
+<p align="center">
+  <img src="docs/media/numpowder.gif" width="640" alt="NumPowder: sand poured on a metal shelf, then water, then lava that melts the ice and boils the water">
+</p>
+
+The Powder Toy, right on your calculator: draw sand, water, fire and 175 other materials and watch them react.
+
+- **Things react:** sand sinks in water, fire burns wood, lava melts ice and boils water, acid eats most things.
+- **Heat, air and electricity:** things melt, boil and freeze, explosions push the air, and sparks run along metal and silicon.
+- **Walls, tools and views:** 17 kinds of walls, tools to heat and cool, and the original's display modes.
+- **Easy on a keypad:** the bottom of the screen always says what the keys do, and How to play is in the menu.
+
+<p align="center">
+  <a href="https://github.com/Mason363/NumPlay/releases/latest/download/NumPowder.nwa"><img src="https://img.shields.io/badge/Download-NumPowder.nwa-C8A040?style=for-the-badge" alt="Download NumPowder.nwa"></a>
+</p>
+
+<p align="center">
+  It's too big to fit next to NumPlay, so it comes on its own. &nbsp;<a href="games/numpowder/README.md"><b>More about NumPowder</b></a> &nbsp;·&nbsp; <a href="docs/play.md#numpowder"><b>How to play</b></a>
+</p>
+
+
 
 ## New: The Final Earth 2
 
@@ -215,6 +238,10 @@ Click a file to download it. Not sure which one? Take the first.
     <td><a href="https://github.com/Mason363/NumPlay/releases/latest/download/HollowKnight.nwa">HollowKnight.nwa</a><br>Hollow Knight: from King's Pass to Hornet in Greenpath. It fills the calculator's app space, so it comes on its own, not inside NumPlay (<a href="games/hollowknight/README.md">more</a>)</td>
   </tr>
   <tr>
+    <td width="120" align="center"><img src="docs/media/thumb_numpowder.png" width="112" alt="NumPowder"></td>
+    <td><a href="https://github.com/Mason363/NumPlay/releases/latest/download/NumPowder.nwa">NumPowder.nwa</a><br>NumPowder: The Powder Toy on the calculator, sand, water, fire, acid, electricity and 175 materials. It's too big to fit next to NumPlay, so it comes on its own (<a href="games/numpowder/README.md">more</a>)</td>
+  </tr>
+  <tr>
     <td width="120" align="center"><img src="docs/media/thumb_finalearth2.png" width="112" alt="The Final Earth 2"></td>
     <td><a href="https://github.com/Mason363/NumPlay/releases/latest/download/FinalEarth2.nwa">FinalEarth2.nwa</a><br>The Final Earth 2: build a city on floating islands in space. It's too big to fit next to NumPlay, so it comes on its own (<a href="games/finalearth2/README.md">more</a>)</td>
   </tr>
@@ -309,9 +336,9 @@ You need your calculator, its USB cable, and a computer with **Google Chrome** o
 | Calculator | Software | What runs |
 | --- | --- | --- |
 | N0120 | Epsilon 23.2 or newer (the calculator's own software) | Everything |
-| N0110, N0115 | Epsilon 23.2 or newer | Everything. These models are about 2.5 times slower, so the big games (The Final Earth 2, Hollow Knight, Celeste, NumDrive, NumBlocks, Champion Island) show fewer frames per second, but they keep their speed. |
+| N0110, N0115 | Epsilon 23.2 or newer | Everything. These models are about 2.5 times slower, so the big games (NumPowder, The Final Earth 2, Hollow Knight, Celeste, NumDrive, NumBlocks, Champion Island) show fewer frames per second, but they keep their speed. |
 | N0110, N0115 | Upsilon | NumPlay-Upsilon.nwa: 13 games. See [On Upsilon](#on-upsilon). |
-| Any | Custom software built from Epsilon 25.2's source | Everything, The Final Earth 2, Celeste, Hollow Knight and Champion Island too. These builds can give apps less memory (133 KB): on one that gives even less, a game that needs more than there is says how much on its card. |
+| Any | Custom software built from Epsilon 25.2's source | Everything, NumPowder, The Final Earth 2, Celeste, Hollow Knight and Champion Island too. These builds can give apps less memory (133 KB): on one that gives even less, a game that needs more than there is says how much on its card. |
 
 To see your calculator's model and software, open **Settings**, then **About**. To update the software, go to [my.numworks.com](https://my.numworks.com) with the calculator plugged in.
 
@@ -319,7 +346,7 @@ To see your calculator's model and software, open **Settings**, then **About**. 
 
 **NumPlay-French.nwa** and **NumPlay-Chinese.nwa** are NumPlay with every game in French or in Chinese (simplified). Install them like NumPlay.nwa, instead of it. Your progress is the same in every language.
 
-A few things stay in English: logos and words drawn into pictures, level names, the calculator's key names, NumBlocks' commands, and Portal Returns' chamber stories. The Final Earth 2, Celeste, Hollow Knight and Champion Island come in English only.
+A few things stay in English: logos and words drawn into pictures, level names, the calculator's key names, NumBlocks' commands, and Portal Returns' chamber stories. NumPowder, The Final Earth 2, Celeste, Hollow Knight and Champion Island come in English only.
 
 ### On Upsilon
 
@@ -344,7 +371,7 @@ Upsilon support is new. If it doesn't work on your calculator, please [email me]
 
 - **The calculator restarts once after installing**: it shows the NumWorks logo, then asks for your language. That's normal. Your apps are at the end of the home screen after that.
 - **Celeste, Hollow Knight and Champion Island each fill the whole space for apps.** Install one of them alone, without NumPlay and without each other: if you pick more than fits, they don't install.
-- **The Final Earth 2 doesn't fit next to NumPlay.** Install it without NumPlay.
+- **NumPowder and The Final Earth 2 don't fit next to NumPlay.** Install them without NumPlay.
 - **Installing replaces the apps you installed before.** To keep one, add it again with the new one.
 - Check your calculator's software is **Epsilon 23.2 or newer** (Settings, then About), and update it at [my.numworks.com](https://my.numworks.com) if not.
 
@@ -366,6 +393,10 @@ Upsilon support is new. If it doesn't work on your calculator, please [email me]
   <tr>
     <td><img src="docs/media/hollowknight.gif" alt="Hollow Knight: the Knight in King's Pass, against the False Knight and Hornet"></td>
     <td><img src="games/hollowknight/docs/greenpath.png" width="100%" alt="Hollow Knight: Greenpath"></td>
+  </tr>
+  <tr>
+    <td><img src="docs/media/numpowder.gif" alt="NumPowder: sand poured on a metal shelf, then water, then lava that melts the ice and boils the water"></td>
+    <td><img src="games/numpowder/docs/explosion.png" width="100%" alt="NumPowder: C-4 exploding under stone"></td>
   </tr>
   <tr>
     <td><img src="docs/media/finalearth2.gif" alt="The Final Earth 2: building a house on a city in free play, then its window and the happiness window"></td>
@@ -419,6 +450,7 @@ Upsilon support is new. If it doesn't work on your calculator, please [email me]
 - **Minecraft** by Mojang inspired NumBlocks, which uses Minecraft 1.8.8's textures, font and screens and makes its worlds the way Minecraft 1.8.8 does.
 - **Celeste** inspired NumPlay's Celeste, which uses the game's own pictures, maps, texts and fonts. Not affiliated with Maddy Makes Games.
 - **Hollow Knight** inspired NumPlay's Hollow Knight, which uses the game's own pictures, animations, maps, texts and fonts. Not affiliated with Team Cherry.
+- **[The Powder Toy](https://powdertoy.co.uk)** inspired NumPowder, which ports its materials' behaviour, its font and its icons from [its source code](https://github.com/The-Powder-Toy/The-Powder-Toy) (GNU GPL v3.0), by Stanislaw K Skowronek, Simon Robertshaw and its contributors. Not affiliated with them.
 - **[The Final Earth 2](https://store.steampowered.com/app/1180130/The_Final_Earth_2/)** by [Florian van Strien](https://florianvanstrien.nl) inspired NumPlay's The Final Earth 2, which uses the game's own pictures, fonts and texts, with additional sprites by LukXD99. Not affiliated with him.
 - **Buckshot Roulette** by Mike Klubnika inspired NumPlay's Buckshot Roulette, whose scenes are rendered from the game through the Open Buckshot Roulette project (1503Dev). Fonts: Fake Receipt by Ray Larabie and Dot Matrix by Dionaea.
 - The **Doodle Champion Island Games** (2021) inspired Champion Island, which uses the doodle's own pictures, maps and texts from the [Google-Doodle-Champion-Island](https://github.com/potherca-blog/Google-Doodle-Champion-Island) archive by potherca-blog, and the **PixelMplus** font by Itou Hiroki ([license](LICENSES/PixelMplus.txt)).
@@ -436,4 +468,4 @@ NumPlay is licensed under the [GNU General Public License v3.0](LICENSE). Copyri
 
 Code and fonts from others keep their own licenses: the `UNLICENSE` files in the games' folders and the [LICENSES](LICENSES) folder. The names, artwork and music of the games NumPlay is inspired by belong to their makers and are not covered by it.
 
-<sub>Unofficial fan games, not affiliated with NumWorks, RobTop Games (Geometry Dash), Hipster Whale (Crossy Road), the makers of Drive Mad, LocalThunk or Playstack (Balatro), Mike Klubnika or Critical Reflex (Buckshot Roulette), Mojang or Microsoft (Minecraft), Maddy Makes Games (Celeste), Team Cherry (Hollow Knight), Florian van Strien (The Final Earth 2), MateoConLechuga (Portal Returns), Valve (Portal), .GEARS (Flappy Bird), Bandai Namco (Pac-Man), Hasbro (Connect Four), Google (Snake, Solitaire, Block Breaker, Doodle Champion Island Games), STUDIO4°C or Microsoft (Minesweeper). Tetris is a trademark of The Tetris Company, Minecraft of Mojang Synergies AB, Pac-Man of Bandai Namco and Connect Four of Hasbro.</sub>
+<sub>Unofficial fan games, not affiliated with NumWorks, RobTop Games (Geometry Dash), Hipster Whale (Crossy Road), the makers of Drive Mad, LocalThunk or Playstack (Balatro), Mike Klubnika or Critical Reflex (Buckshot Roulette), Mojang or Microsoft (Minecraft), Maddy Makes Games (Celeste), Team Cherry (Hollow Knight), Florian van Strien (The Final Earth 2), The Powder Toy's developers (The Powder Toy), MateoConLechuga (Portal Returns), Valve (Portal), .GEARS (Flappy Bird), Bandai Namco (Pac-Man), Hasbro (Connect Four), Google (Snake, Solitaire, Block Breaker, Doodle Champion Island Games), STUDIO4°C or Microsoft (Minesweeper). Tetris is a trademark of The Tetris Company, Minecraft of Mojang Synergies AB, Pac-Man of Bandai Namco and Connect Four of Hasbro.</sub>
