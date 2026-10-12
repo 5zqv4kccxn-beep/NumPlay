@@ -83,15 +83,19 @@ def main():
     for name, what in LANGUAGES:
         files.append((os.path.join(a.build, name), f"{name} · {what}"))
         notes.append(f"| {link(name)} | {what} |")
+    # the games too big to share the calculator with NumPlay, each its own app
+    alone = [gid for gid in ALONE if gid in apps]
+    if alone:
+        notes += ["", "### Individual Games", "", "| File | |", "| --- | --- |"]
+        for gid in alone:
+            title, what = ALONE[gid]
+            name, what = apps[gid], f"{title}: {what}"
+            files.append((os.path.join(a.build, "apps", name), f"{name} · {what}"))
+            notes.append(f"| {link(name)} | {what} |")
     name, what = UPSILON
     notes += ["", "### On Upsilon", "", "| File | |", "| --- | --- |", f"| {link(name)} | {what} |"]
     files.append((os.path.join(a.build, name), f"{name} · {what}"))
     notes += ["", "### Each one on its own", "", "In the launcher's order.", "", "| File | |", "| --- | --- |"]
-    def alone_entry(gid):
-        title, what = ALONE[gid]
-        name, what = apps[gid], f"{title}: {what}"
-        files.append((os.path.join(a.build, "apps", name), f"{name} · {what}"))
-        notes.append(f"| {link(name)} | {what} |")
 
     for g in games:
         name = g.get("app") or apps.get(g["id"])
@@ -101,11 +105,6 @@ def main():
         what = f"Only {g['title']}: {tagline}"
         files.append((os.path.join(a.build, "apps", name), f"{name} · {what}"))
         notes.append(f"| {link(name)} | {what} |")
-    alone = [gid for gid in ALONE if gid in apps]
-    if alone:
-        notes += ["", "### Too big for NumPlay", "", "| File | |", "| --- | --- |"]
-        for gid in alone:
-            alone_entry(gid)
     notes += ["", "<sub>The file list below is sorted A to Z by GitHub. Each file's label says what it is.</sub>"]
 
     intro = open(os.path.join(ROOT, ".github", "release.md")).read().rstrip()
