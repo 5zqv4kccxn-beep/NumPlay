@@ -180,7 +180,7 @@ Filmed on my own calculator, no emulator.
 - [ ] Subway Surfers
 - [ ] The Nether and the End in NumBlocks
 - [ ] A customizer website: pick the games you want in your launcher, with Enlarged Extra Apps support to fit several big games, or big and small ones together
-- [ ] A Game Boy emulator: upload your own ROMs on the website and get a .nwa app that plays them
+- [ ] [Retro-Go](https://github.com/ducalex/retro-go) for Game Boy, NES and more: upload your own ROMs on the website and get a .nwa app that plays them
 
 ## Credits
 
