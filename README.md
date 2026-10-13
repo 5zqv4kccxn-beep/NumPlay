@@ -79,7 +79,7 @@ These are too big to fit next to NumPlay, so each one is its own app. Install it
   <tr>
     <td align="center"><a href="games/celeste/README.md"><img src="docs/media/thumb_celeste.png" width="200" alt="Celeste"><br><b>Celeste</b></a><br><sub>The whole climb, with every B-side and C-side</sub><br><a href="https://github.com/Mason363/NumPlay/releases/latest/download/Celeste.nwa">Download</a></td>
     <td align="center"><a href="games/championisland/README.md"><img src="docs/media/thumb_championisland.png" width="200" alt="Champion Island"><br><b>Champion Island</b></a><br><sub>The whole island and its seven sports</sub><br><a href="https://github.com/Mason363/NumPlay/releases/latest/download/ChampionIsland.nwa">Download</a></td>
-    <td align="center"><a href="#roadmap"><b>More on the way</b></a><br><sub>Undertale's fights, The Binding of Isaac, Plants vs. Zombies, Doom and more: see the roadmap</sub></td>
+    <td align="center"><a href="#roadmap"><b>More on the way</b></a><br><sub>Undertale, The Binding of Isaac, Plants vs. Zombies, Doom and more: see the roadmap</sub></td>
   </tr>
 </table>
 
@@ -171,7 +171,7 @@ Filmed on my own calculator, no emulator.
 - [x] The Final Earth 2
 - [x] The Powder Toy (NumPowder)
 - [x] Block Blast
-- [ ] Undertale (the fights)
+- [ ] Undertale
 - [ ] The Binding of Isaac
 - [ ] Plants vs. Zombies
 - [ ] Doom
@@ -182,6 +182,7 @@ Filmed on my own calculator, no emulator.
 - [ ] Sonic the Hedgehog
 - [ ] Subway Surfers
 - [ ] The Nether and the End in NumBlocks
+- [ ] Full Minecraft 1.18.2 as a standalone app
 - [ ] A customizer website: pick the games you want in your launcher, with Enlarged Extra Apps support to fit several big games, or big and small ones together
 - [ ] [Retro-Go](https://github.com/ducalex/retro-go) for Game Boy, NES and more: upload your own ROMs on the website and get a .nwa app that plays them
 
