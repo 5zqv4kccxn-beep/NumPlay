@@ -21,19 +21,11 @@ jobs:
         with:
           node-version: 20
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
       - name: Tools
-        run: |
-          sudo apt-get update -q && sudo apt-get install -yq pngquant
-          pip install pillow numpy zopfli pyelftools unicorn==2.1.4
-          npm install -g nwlink@1.0.0
-          rustup target add thumbv7em-none-eabihf
+        run: npm install -g nwlink@1.0.0
 
       - name: Build
-        run: make -j4 nwa NWLINK=nwlink
+        run: make -j4 nwa check NWLINK=nwlink
 
       - uses: actions/upload-artifact@v4
         with:
