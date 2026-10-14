@@ -1513,6 +1513,14 @@ static const char *const np_doc_2_lines[] = {
   "",
   "Cours de Seconde page 24",
 };
+/* Sommaire de navigation Tableur : les cours ci-dessous sont regroupes par matiere.
+ * Les index pointent vers np_docs[] et sont consommes par l'accueil. */
+static const char *const np_tableur_contents[] = {
+  "CHIMIE | 1. Corps purs et melanges | 2. Solutions, dissolution et dilution",
+  "MATHS | 1. Nombres et calculs | 2. Fonctions | 3. Geometrie du plan | 4. Geometrie de l'espace | 5. Statistiques et probabilites | 6. Algorithmique",
+  "PHYSIQUE | 1. Transformations chimiques | 2. Mouvement et interactions | 3. Ondes et signaux | 4. Signaux et capteurs",
+};
+
 static const np_doc_t np_docs[] = {
   {"Chimie \u2014 chapitre 1", np_doc_0_lines, sizeof(np_doc_0_lines)/sizeof(np_doc_0_lines[0])},
   {"Chimie \u2014 chapitre 2", np_doc_1_lines, sizeof(np_doc_1_lines)/sizeof(np_doc_1_lines[0])},
