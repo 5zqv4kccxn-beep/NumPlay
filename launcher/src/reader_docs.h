@@ -2,8 +2,6 @@
 #ifndef NP_READER_DOCS_H
 #define NP_READER_DOCS_H
 typedef struct { const char *title; const char *const *lines; unsigned count; } np_doc_t;
-typedef struct { const char *title; unsigned offset; } np_doc_chapter_t;
-typedef struct { const char *title; const np_doc_t *doc; const np_doc_chapter_t *chapters; unsigned chapter_count; } np_subject_t;
 static const char *const np_doc_0_lines[] = {
   "Chapitre 1 : Corps purs et melanges.",
   "Notions et contenus, capacites exigibles",
@@ -1521,28 +1519,4 @@ static const np_doc_t np_docs[] = {
   {"Maths-Physique", np_doc_2_lines, sizeof(np_doc_2_lines)/sizeof(np_doc_2_lines[0])},
 };
 static const unsigned np_doc_count = sizeof(np_docs)/sizeof(np_docs[0]);
-static const np_doc_chapter_t np_doc_0_chapters[] = {
-  {"Chapitre 1 : Corps purs et melanges", 0},
-};
-static const np_doc_chapter_t np_doc_1_chapters[] = {
-  {"Chapitre 2 : TD sur les solutions", 0},
-};
-static const np_doc_chapter_t np_doc_2_chapters[] = {
-  {"Chapitre 1 : Nombres et calculs", 65},
-  {"Chapitre 2 : Fonctions", 165},
-  {"Chapitre 3 : Geometrie dans le plan", 261},
-  {"Chapitre 4 : Geometrie dans l'espace", 340},
-  {"Chapitre 5 : Statistiques et probabilites", 423},
-  {"Chapitre 6 : Algorithmique et programmation", 511},
-  {"Chapitre 1 : Constitution et transformations de la matiere", 605},
-  {"Chapitre 2 : Mouvement et interactions", 696},
-  {"Chapitre 3 : Ondes et signaux", 786},
-  {"Chapitre 4 : Signaux et capteurs", 875},
-};
-static const np_subject_t np_subjects[] = {
-  {"Chimie \u2014 chapitre 1", &np_docs[0], np_doc_0_chapters, sizeof(np_doc_0_chapters)/sizeof(np_doc_0_chapters[0])},
-  {"Chimie \u2014 chapitre 2", &np_docs[1], np_doc_1_chapters, sizeof(np_doc_1_chapters)/sizeof(np_doc_1_chapters[0])},
-  {"Maths-Physique", &np_docs[2], np_doc_2_chapters, sizeof(np_doc_2_chapters)/sizeof(np_doc_2_chapters[0])},
-};
-static const unsigned np_subject_count = sizeof(np_subjects)/sizeof(np_subjects[0]);
 #endif
