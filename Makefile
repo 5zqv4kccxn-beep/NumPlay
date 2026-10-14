@@ -1,4 +1,5 @@
 .RECIPEPREFIX := >
+.SECONDEXPANSION:
 
 # Tableur : lecteur de cours pour NumWorks (sans jeux).
 NWLINK ?= npx --yes -- nwlink@1.0.0
@@ -29,9 +30,9 @@ $(B)/arm/%.o: launcher/src/%.c $(LAUNCHER_H) VERSION | $(B)
 > $(ARM_CC) $(ARM_CFLAGS) -flto -c $< -o $@
 
 $(B)/variant/%-name.o: launcher/app_name.c Makefile | $(B)
-> $(ARM_CC) $(ARM_CFLAGS) '-DNP_APP_NAME=$(NAME_$*)' -c $< -o $@
+> $(ARM_CC) $(ARM_CFLAGS) '-DNP_APP_NAME="$(NAME_$*)"' -c $< -o $@
 
-$(B)/variant/%-icon.o: $(ICON_$*) | $(B)
+$(B)/variant/%-icon.o: $$(ICON_$$*) | $(B)
 > $(NWLINK) png-icon-o $< $@
 
 $(B)/empty.o: | $(B)
