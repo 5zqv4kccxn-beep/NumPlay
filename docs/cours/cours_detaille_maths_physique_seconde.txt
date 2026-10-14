@@ -1,0 +1,906 @@
+         COURS DÉTAILLÉ
+       MATHÉMATIQUES &
+       PHYSIQUE-CHIMIE
+                 Classe de Seconde
+Programme 2019 — méthodes, formules et exercices résolus
+
+
+
+
+       Comprendre • Modéliser • Calculer • Vérifier
+
+
+
+
+ Document de synthèse pour l’apprentissage et la révision
+MATHÉMATIQUES
+
+
+
+
+Table des matières
+Repères : chaque chapitre alterne cours, formules clés, propriétés et applications guidées. Les
+unités sont rappelées lorsqu’elles sont indispensables.
+
+
+
+PARTIE I — MATHÉMATIQUES
+• 1. Nombres et calculs
+
+• 2. Fonctions
+
+• 3. Géométrie dans le plan
+
+• 4. Géométrie dans l’espace
+
+• 5. Statistiques et probabilités
+
+• 6. Algorithmique et programmation
+
+
+PARTIE II — PHYSIQUE-CHIMIE
+• 1. Constitution et transformations de la matière
+
+• 2. Mouvement et interactions
+
+• 3. Ondes et signaux
+
+• 4. Signaux et capteurs
+
+  Méthode générale
+
+  Lire les données et les unités ; choisir une représentation (schéma, tableau, graphique ou
+  équation) ; appliquer une propriété en justifiant ; effectuer le calcul ; contrôler le signe,
+  l’unité et l’ordre de grandeur.
+
+
+
+
+                                                                                Cours de Seconde • page 2
+MATHÉMATIQUES
+
+
+
+
+                   PARTIE I
+
+                MATHÉMATIQUES
+
+
+
+
+                                Cours de Seconde • page 3
+MATHÉMATIQUES
+
+
+
+
+Chapitre 1 — Nombres et calculs
+  Objectifs
+
+  Manipuler les réels, les puissances et les racines ; traduire une condition par un intervalle ;
+  résoudre une inéquation et encadrer un résultat.
+
+
+  Définitions — réels et intervalles
+
+  L’ensemble des nombres réels se note ℝ. Un intervalle [a;b] contient ses bornes ; ]a;b[ ne
+  les contient pas ; [a;b[ contient a mais pas b. Une valeur absolue |x| représente la distance
+  de x à 0.
+
+
+  Formules clés
+
+  Pour a ≥ 0, √a est l’unique réel positif dont le carré vaut a. Pour a,b ≥ 0 : √(ab)=√a√b et
+  √(a/b)=√a/√b (b≠0). Pour a≠0 : a−n=1/an.
+
+
+
+1. Calculer sans perdre le sens
+Les règles de priorité sont : parenthèses, puissances/racines, multiplications et divisions, puis
+additions et soustractions. Une fraction représente un quotient : on ne simplifie un facteur que s’il
+est commun au numérateur et au dénominateur.
+
+               am × an = am+n ; (am)n = amn ; am/an = am−n (a ≠ 0)
+
+     Simplifier A = 3√12 − √27.
+
+     Étape 1. Factoriser les radicandes par des carrés parfaits : √12=√(4×3)=2√3 et
+     √27=√(9×3)=3√3.
+
+     Étape 2. Remplacer puis regrouper les termes de même nature : A=3×2√3−3√3=6√3−3√3.
+
+     Conclusion. A=3√3.
+
+
+2. Valeur absolue, distance et inéquations
+|x|=a (a≥0) équivaut à x=a ou x=−a. |x|≤a équivaut à −a≤x≤a ; |x|≥a équivaut à x≤−a ou x≥a.
+Lorsqu’on multiplie ou divise une inéquation par un nombre négatif, le sens du signe s’inverse.
+
+     Résoudre 3x−5≤7.
+
+     Étape 1. Ajouter 5 aux deux membres : 3x≤12.
+
+     Étape 2. Diviser par 3, positif : x≤4.
+
+     Étape 3. Écrire l’ensemble solution : ]−∞;4].
+
+     Conclusion. La droite graduée est un bon contrôle : toutes les valeurs à gauche de 4
+     conviennent.
+
+
+3. Encadrements et ordre de grandeur
+Pour additionner des encadrements, on additionne les bornes correspondantes. Pour une
+multiplication, le signe des bornes doit être examiné. Une valeur approchée doit être
+
+                                                                                 Cours de Seconde • page 4
+MATHÉMATIQUES
+
+
+
+accompagnée d’une précision (au dixième, au centième…).
+
+      Encadrer √20 au centième.
+
+      Étape 1. Comme 4<20<25 et que la fonction carré est croissante sur [0;+∞[, 2<√20<5.
+
+      Étape 2. Tester 4,47²=19,9809 et 4,48²=20,0704 : 4,47<√20<4,48.
+
+      Conclusion. √20≈4,47 au centième.
+
+À retenir : toujours vérifier le domaine (dénominateur non nul, radicande positif) avant de transformer une
+expression.
+
+
+
+
+                                                                                           Cours de Seconde • page 5
+MATHÉMATIQUES
+
+
+
+
+Chapitre 2 — Fonctions
+  Objectifs
+
+  Lire et produire une image, retrouver un antécédent, décrire les variations et utiliser les
+  fonctions de référence.
+
+
+  Définition — fonction
+
+  Une fonction f associe à chaque nombre x d’un ensemble de départ au plus une valeur f(x),
+  appelée image de x. Un nombre x tel que f(x)=k est un antécédent de k.
+
+
+  Propriétés — variations
+
+  f est croissante sur un intervalle si x<y implique f(x)≤f(y). Elle est décroissante si x<y
+  implique f(x)≥f(y). Un tableau de variations synthétise ces informations.
+
+
+
+1. Trois représentations complémentaires
+Une fonction peut être donnée par une formule, un tableau de valeurs ou une courbe. Pour lire f(2),
+on part de 2 sur l’axe des abscisses, on rejoint la courbe, puis on lit l’ordonnée. Pour résoudre
+f(x)=3, on cherche les abscisses des points de la courbe d’ordonnée 3.
+
+     Soit f(x)=2x−3. Calculer l’image de 4 et l’antécédent de 7.
+
+     Étape 1. Image : f(4)=2×4−3=5.
+
+     Étape 2. Antécédent : résoudre 2x−3=7, donc 2x=10 puis x=5.
+
+     Conclusion. L’image de 4 est 5 ; l’unique antécédent de 7 est 5.
+
+
+2. Fonctions de référence
+   Fonction          Expression               Repères
+
+   Affine            f(x)=ax+b                droite ; croissante si a>0, décroissante si a<0
+
+   Carré             f(x)=x²                  paire ; décroît sur ]−∞;0] puis croît sur [0;+∞[
+
+   Inverse           f(x)=1/x                 définie sur ℝ privé de 0 ; deux branches
+
+   Racine carrée     f(x)=√x                  définie sur [0;+∞[ ; croissante
+
+   Cube              f(x)=x³                  impaire ; strictement croissante sur ℝ
+
+
+     Pour f(x)=ax+b : coefficient directeur a = (y₂−y₁)/(x₂−x₁) si x₁ ≠ x₂
+
+     Étudier le sens de variation de f(x)=−3x+2.
+
+     Étape 1. La fonction est affine de coefficient directeur a=−3.
+
+     Étape 2. Comme a<0, f est décroissante sur ℝ.
+
+     Étape 3. Contrôle direct : si x−3y, donc −3x+2>−3y+2.
+
+     Conclusion. f est strictement décroissante sur ℝ.
+
+
+3. Résoudre graphiquement
+
+                                                                                       Cours de Seconde • page 6
+MATHÉMATIQUES
+
+
+
+Les intersections de la courbe de f avec l’axe des abscisses donnent les solutions de f(x)=0. Pour
+une inéquation, on repère les portions de courbe situées au-dessus ou au-dessous de la droite
+horizontale correspondante.
+
+
+
+
+                                                                              Cours de Seconde • page 7
+MATHÉMATIQUES
+
+
+
+
+Chapitre 3 — Géométrie dans le plan
+  Objectifs
+
+  Utiliser coordonnées et vecteurs ; tester la colinéarité ; déterminer une équation de droite
+  et reconnaître parallélisme ou orthogonalité.
+
+
+  Définitions — coordonnées et vecteurs
+
+  Dans un repère orthonormé, M(x;y). Le vecteur AB a pour coordonnées (xB−xA ; yB−yA).
+  Deux vecteurs sont colinéaires s’il existe k tel que u=k v.
+
+
+  Formules clés
+
+  AB=√((xB−xA)²+(yB−yA)²). Pour u(x;y) et v(x′;y′), det(u,v)=xy′−yx′ ; colinéarité ⇔ det=0.
+  Produit scalaire u·v=xx′+yy′ ; orthogonalité ⇔ u·v=0.
+
+
+
+1. Coordonnées et milieu
+
+                      Milieu de [AB] : M((xA+xB)/2 ; (yA+yB)/2)
+
+     A(−2;3), B(4;−1). Déterminer AB et le milieu.
+
+     Étape 1. AB=(6;−4). Sa longueur vaut √(6²+(−4)²)=√52=2√13.
+
+     Étape 2. M=((−2+4)/2 ; (3−1)/2)=(1;1).
+
+     Conclusion. AB=2√13 et M(1;1).
+
+
+2. Droites
+Une droite non verticale admet une équation réduite y=mx+p. m est le coefficient directeur et p
+l’ordonnée à l’origine. Une équation cartésienne ax+by+c=0 permet aussi de décrire une droite
+verticale.
+
+     Droite passant par A(1;2) et B(3;6).
+
+     Étape 1. m=(6−2)/(3−1)=2.
+
+     Étape 2. Avec A : 2=2×1+p, donc p=0.
+
+     Conclusion. L’équation est y=2x.
+
+
+3. Parallélisme et orthogonalité
+Deux droites sont parallèles si leurs vecteurs directeurs sont colinéaires (ou si leurs coefficients
+directeurs sont égaux). Dans un repère orthonormé, deux droites de coefficients m et m′ sont
+perpendiculaires si mm′=−1 lorsque les deux coefficients sont définis.
+
+
+
+
+                                                                                Cours de Seconde • page 8
+MATHÉMATIQUES
+
+
+
+
+     u(2;−3) et v(−4;6) sont-ils colinéaires ?
+
+     Étape 1. det(u,v)=2×6−(−3)×(−4)=12−12=0.
+
+     Étape 2. Le déterminant nul montre la colinéarité ; v=−2u.
+
+     Conclusion. Oui, les vecteurs sont colinéaires.
+
+
+
+
+                                                                  Cours de Seconde • page 9
+MATHÉMATIQUES
+
+
+
+
+Chapitre 4 — Géométrie dans l’espace
+  Objectifs
+
+  Identifier les solides, calculer longueurs, aires et volumes ; comprendre une section plane ;
+  mobiliser Thalès dans des configurations spatiales.
+
+
+  Solides usuels
+
+  Prisme droit : deux bases parallèles et superposables. Cylindre : deux disques parallèles.
+  Pyramide et cône : une base et un sommet. Sphère : ensemble des points à distance R
+  d’un centre.
+
+
+  Formules de volumes
+
+  Prisme/cylindre : V=B×h. Pyramide/cône : V=(1/3)B×h. Boule : V=(4/3)πR³. Pour un
+  cylindre, B=πR².
+
+
+
+1. Sections planes
+Une section est l’intersection d’un solide avec un plan. Un plan parallèle à la base d’un prisme
+donne une section de même forme et de même aire que la base. Une section parallèle à la base
+d’une pyramide est une figure semblable à la base, mais réduite.
+
+  Schéma à reproduire
+
+  Dessiner un pavé droit ABCDEFGH, puis un plan parallèle à la base ABCD. La section est un
+  rectangle situé entre les deux bases. Pour une pyramide, tracer un triangle de coupe
+  parallèle à la base : les arêtes latérales sont partagées dans un même rapport.
+
+
+2. Thalès dans l’espace
+Dans deux plans parallèles, une projection depuis un point conserve les rapports de longueurs sur
+les droites sécantes. Si une pyramide est coupée par un plan parallèle à sa base et si SA′/SA=k,
+alors toutes les longueurs de la section sont multipliées par k et les aires par k² ; les volumes
+correspondants par k³.
+
+                        Longueurs : k ; aires : k² ; volumes : k³
+
+     Une pyramide de hauteur 12 cm est coupée à 5 cm du sommet par un plan parallèle à la base.
+     Le volume total vaut 360 cm³. Volume de la petite pyramide ?
+
+     Étape 1. Le rapport de réduction est k=5/12.
+
+     Étape 2. Les volumes sont dans le rapport k³ : Vpetite=360×(5/12)³.
+
+     Étape 3. Calcul : (5/12)³=125/1728, donc Vpetite≈26,0 cm³.
+
+     Conclusion. Le volume de la petite pyramide est environ 26 cm³.
+
+
+3. Unités et contrôle
+Une longueur s’exprime en unité de longueur, une aire en unité carrée, un volume en unité
+cubique. Avant un calcul de volume, convertir toutes les dimensions dans la même unité.
+
+                                                                              Cours de Seconde • page 10
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 5 — Statistiques et probabilités
+  Objectifs
+
+  Organiser des données, calculer indicateurs et fréquences ; modéliser une expérience
+  aléatoire par un tableau ou un arbre.
+
+
+  Vocabulaire statistique
+
+  Une population est étudiée selon un caractère. L’effectif est le nombre d’individus ; la
+  fréquence est effectif/total. La médiane partage la série ordonnée en deux groupes de
+  même effectif.
+
+
+  Formules clés
+
+  Moyenne pondérée : x̄=(Σ nᵢxᵢ)/(Σ nᵢ). Variance : V=(1/N)Σnᵢ(xᵢ−x̄)². Écart-type : σ=√V. Pour
+  une équiprobabilité, P(A)=nombre de cas favorables/nombre de cas possibles.
+
+
+
+ 1. Indicateurs
+ Pour une série quantitative, trier les valeurs avant de chercher la médiane. Si N est impair, c’est la
+ valeur de rang (N+1)/2 ; si N est pair, c’est la moyenne des valeurs de rang N/2 et N/2+1.
+ L’écart-type mesure la dispersion autour de la moyenne : il est nul si toutes les valeurs sont
+ identiques.
+
+      Notes : 8, 10, 10, 12, 15. Moyenne, médiane et écart-type.
+
+      Étape 1. Moyenne : (8+10+10+12+15)/5=11.
+
+      Étape 2. La troisième valeur est 10 : médiane=10.
+
+      Étape 3. Écarts au carré : 9,1,1,1,16 ; moyenne=28/5=5,6 ; σ=√5,6≈2,37.
+
+      Conclusion. Moyenne 11, médiane 10, écart-type environ 2,37.
+
+
+ 2. Probabilités et représentations
+ Une probabilité est comprise entre 0 et 1. L’événement contraire de A se note Ā et P(Ā)=1−P(A). Si
+ A et B sont incompatibles, P(A∪B)=P(A)+P(B). Un arbre pondéré porte les probabilités sur les
+ branches ; la probabilité d’un chemin est le produit des probabilités des branches.
+
+      Une urne contient 3 boules rouges et 2 bleues. On tire une boule puis une seconde sans
+      remise. Probabilité de deux rouges ?
+
+      Étape 1. Premier tirage rouge : 3/5.
+
+      Étape 2. Après une rouge, il reste 2 rouges sur 4 : 2/4.
+
+      Étape 3. Produit du chemin : (3/5)×(2/4)=6/20=3/10.
+
+      Conclusion. La probabilité vaut 0,3, soit 30 %.
+
+
+ 3. Tableaux et fréquences
+
+
+                                                                                Cours de Seconde • page 11
+PHYSIQUE-CHIMIE
+
+
+
+ Un tableau à double entrée permet de croiser deux caractères. Les sommes marginales donnent
+ les effectifs totaux de chaque ligne ou colonne. Une fréquence conditionnelle se calcule par
+ rapport à la population de référence précisée.
+
+
+
+
+                                                                         Cours de Seconde • page 12
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 6 — Algorithmique et programmation
+  Objectifs
+
+  Écrire un programme Python lisible ; utiliser variables, conditions, boucles et fonctions ;
+  tester et expliquer un algorithme.
+
+
+  Instructions fondamentales
+
+  Une variable mémorise une valeur. Une condition utilise if/elif/else. Une boucle for répète
+  un nombre déterminé de fois ; while répète tant qu’une condition est vraie. Une fonction
+  regroupe une méthode et peut renvoyer un résultat avec return.
+
+
+  Bonnes pratiques
+
+  Choisir des noms explicites, indenter régulièrement, commenter l’idée et tester des cas
+  simples, limites et imprévus. Attention : range(a,b) va de a inclus à b exclu.
+
+
+
+ 1. Variables et conditions
+ Exemple Python :
+ x = float(input("x = "))
+ if x &gt; 0:
+ print("positif")
+ elif x == 0:
+ print("nul")
+ else:
+ print("négatif")
+
+ Le programme convertit la saisie en nombre décimal puis choisit une branche. Tester x=3, x=0 et
+ x=−2 vérifie les trois possibilités.
+
+
+ 2. Boucles et accumulation
+ Somme des carrés de 1 à n :
+ s=0
+ for k in range(1, n+1):
+ s = s + k**2
+
+      Que renvoie somme_carres(3) ?
+
+      Étape 1. Initialisation s=0.
+
+      Étape 2. k=1 : s=1 ; k=2 : s=5 ; k=3 : s=14.
+
+      Étape 3. La boucle s’arrête après k=3 car range(1,4) contient 1,2,3.
+
+      Conclusion. Le résultat est 14.
+
+
+ 3. Fonctions et vérification
+ Fonction :
+ def moyenne(a, b, c):
+ return (a+b+c)/3
+
+                                                                               Cours de Seconde • page 13
+PHYSIQUE-CHIMIE
+
+
+
+ Une fonction est testable indépendamment. Pour moyenne(10,12,14), on obtient 12. En
+ mathématiques, l’algorithme traduit une formule ; en sciences, il peut traiter une série de mesures
+ ou simuler une évolution.
+
+  À savoir expliquer
+
+  Décrire les entrées, la sortie, l’invariant de boucle (ce qui reste vrai après chaque tour) et
+  la complexité intuitive : une boucle parcourant n valeurs effectue environ n étapes.
+
+
+
+
+                                                                                Cours de Seconde • page 14
+PHYSIQUE-CHIMIE
+
+
+
+
+                     PARTIE II
+
+                  PHYSIQUE-CHIMIE
+
+
+
+
+                                    Cours de Seconde • page 15
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 1 — Constitution et transformations de
+ la matière
+  Objectifs
+
+  Décrire atomes, ions et molécules ; utiliser quantité de matière, concentration et gaz
+  parfait ; écrire une équation et suivre l’avancement.
+
+
+  Constitution microscopique
+
+  Un atome possède un noyau (protons chargés + et neutrons neutres) entouré d’électrons
+  chargés −. Un ion est un atome ou groupe d’atomes ayant gagné ou perdu des électrons.
+  Une molécule est un assemblage électriquement neutre d’atomes.
+
+
+  Formules et unités
+
+  Quantité de matière n en mol : n=m/M, avec m en g et M en g·mol⁻¹. Concentration
+  molaire c=n/V en mol·L⁻¹ (V en L). Gaz parfait : pV=nRT, avec p en Pa, V en m³, T en K et
+  R=8,314 J·mol⁻¹·K⁻¹.
+
+
+
+ 1. Tableau périodique et stabilité
+ Les éléments sont classés par numéro atomique Z, égal au nombre de protons. Dans un atome
+ neutre, le nombre d’électrons vaut Z. La charge d’un ion dépend du nombre d’électrons perdus ou
+ gagnés : Na devient Na⁺ en perdant un électron ; Cl devient Cl⁻ en gagnant un électron.
+
+
+ 2. Équations chimiques
+ Une équation traduit une transformation en respectant la conservation des éléments et de la
+ charge. Les coefficients stœchiométriques se choisissent entiers et minimaux. L’état physique peut
+ être indiqué : (s), (l), (g), (aq).
+
+      Combustion du méthane CH₄ dans le dioxygène.
+
+      Étape 1. Compter C : un CO₂ ; H : deux H₂O.
+
+      Étape 2. Compter O dans les produits : 2+2=4, donc 2 O₂ dans les réactifs.
+
+      Conclusion. CH₄ + 2 O₂ → CO₂ + 2 H₂O.
+
+
+ 3. Avancement et réactif limitant
+ Pour aA+bB→cC+dD, à l’avancement x : n(A)=n₀(A)−ax et n(B)=n₀(B)−bx. L’avancement maximal
+ est limité par le premier réactif épuisé : xmax=min(n₀(A)/a ; n₀(B)/b).
+
+      2H₂+O₂→2H₂O avec n₀(H₂)=3 mol et n₀(O₂)=1 mol.
+
+      Étape 1. Ratios disponibles : H₂ : 3/2=1,5 ; O₂ : 1/1=1.
+
+      Étape 2. Le minimum est 1 : xmax=1 mol, donc O₂ est limitant.
+
+      Étape 3. État final : H₂=1 mol, O₂=0, H₂O=2 mol.
+
+      Conclusion. Le dioxygène est totalement consommé et il reste 1 mol de dihydrogène.
+
+
+                                                                                   Cours de Seconde • page 16
+PHYSIQUE-CHIMIE
+
+
+
+ 4. Exemple de quantité de matière
+     Quelle quantité de matière dans 5,85 g de NaCl ? M(NaCl)=58,5 g·mol⁻¹.
+
+     Étape 1. Appliquer n=m/M.
+
+     Étape 2. n=5,85/58,5=0,100 mol.
+
+     Conclusion. n=0,100 mol.
+
+
+
+
+                                                                              Cours de Seconde • page 17
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 2 — Mouvement et interactions
+  Objectifs
+
+  Choisir un référentiel ; calculer vitesse et accélération ; représenter les forces ; relier
+  travail, énergie et puissance.
+
+
+  Mouvement et référentiel
+
+  Un mouvement se décrit par rapport à un référentiel. La vitesse moyenne est la distance
+  parcourue divisée par la durée. L’accélération mesure la variation du vecteur vitesse.
+
+
+  Lois et formules
+
+  Poids : P=mg (N), g≈9,81 N·kg⁻¹. Deux masses s’attirent : F=Gm₁m₂/r². Énergie cinétique :
+  Ec=½mv² (J). Travail d’une force constante : W=F·d·cosθ (J). Puissance moyenne : P=W/Δt
+  (W).
+
+
+
+ 1. Forces et principe d’inertie
+ Une force est modélisée par un vecteur : point d’application, direction, sens et valeur. Le principe
+ d’inertie affirme que si la résultante des forces est nulle, le mouvement est rectiligne uniforme (ou
+ le repos) dans un référentiel galiléen. Réciproquement, une accélération signale une résultante
+ non nulle.
+
+
+ 2. Principe fondamental de la dynamique
+
+                                               ΣF⃗ = m a⃗
+
+ La résultante des forces a la même direction et le même sens que l’accélération ; sa valeur
+ s’exprime en newtons si m est en kg et a en m·s⁻².
+
+      Un chariot de 2,0 kg reçoit une force résultante horizontale de 6,0 N.
+
+      Étape 1. Appliquer a=F/m.
+
+      Étape 2. a=6,0/2,0=3,0 m·s⁻².
+
+      Conclusion. L’accélération vaut 3,0 m·s⁻² dans le sens de la force.
+
+
+ 3. Énergie et travail
+ Le travail d’une force est moteur si cosθ>0, résistant si cosθ<0 et nul si θ=90°. Le théorème de
+ l’énergie cinétique donne ΔEc=ΣW(F). Près de la Terre, l’énergie potentielle de pesanteur peut être
+ écrite Epp=mgh, avec h mesurée par rapport à un niveau choisi.
+
+
+
+
+                                                                                  Cours de Seconde • page 18
+PHYSIQUE-CHIMIE
+
+
+
+
+      Une voiture de 1000 kg passe de 10 à 20 m·s⁻¹.
+
+      Étape 1. Eci=½×1000×10²=50 000 J.
+
+      Étape 2. Ecf=½×1000×20²=200 000 J.
+
+      Étape 3. Variation : ΔEc=150 000 J.
+
+      Conclusion. Le travail de la résultante vaut 1,50×10⁵ J.
+
+
+ 4. Gravitation et puissance
+ La force gravitationnelle diminue comme l’inverse du carré de la distance. Pour un appareil
+ fournissant un travail de 600 J en 20 s, la puissance moyenne vaut 600/20=30 W.
+
+
+
+
+                                                                             Cours de Seconde • page 19
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 3 — Ondes et signaux
+  Objectifs
+
+  Distinguer ondes mécaniques et électromagnétiques ; relier période, fréquence, célérité et
+  longueur d’onde ; expliquer réfraction et spectres.
+
+
+  Définitions et formule d’onde
+
+  Une onde est une perturbation qui se propage en transportant de l’énergie sans transport
+  global de matière. Une onde mécanique nécessite un milieu matériel ; une onde
+  électromagnétique peut se propager dans le vide. T est la période (s), f la fréquence (Hz), λ
+  la longueur d’onde (m), v la célérité (m·s⁻¹).
+
+
+  Loi de propagation
+
+  Pour une onde périodique : v=λf et f=1/T. Dans le vide, la lumière se propage à
+  c≈3,00×10⁸ m·s⁻¹.
+
+
+
+ 1. Mesurer une période et une fréquence
+      Une onde a une période T=2,0 ms et λ=0,68 m.
+
+      Étape 1. Convertir T : 2,0 ms=2,0×10⁻³ s.
+
+      Étape 2. f=1/T=500 Hz.
+
+      Étape 3. v=λf=0,68×500=340 m·s⁻¹.
+
+      Conclusion. La fréquence est 500 Hz et la célérité 340 m·s⁻¹.
+
+
+ 2. Réfraction et indice optique
+ Lorsqu’un rayon passe d’un milieu à un autre, sa direction peut changer : c’est la réfraction.
+ L’indice n d’un milieu est n=c/v, donc il est sans unité et supérieur ou égal à 1 pour un milieu
+ transparent usuel.
+
+                       Loi de Snell-Descartes : n₁ sin i₁ = n₂ sin i₂
+
+ Les angles se mesurent entre le rayon et la normale à la surface. Le rayon incident, la normale et
+ le rayon réfracté appartiennent au même plan.
+
+      Air n₁=1,00, verre n₂=1,50, i₁=30°. Calculer i₂.
+
+      Étape 1. sin i₂=(n₁/n₂)sin30°=(1/1,5)×0,5=0,333.
+
+      Étape 2. i₂=arcsin(0,333)≈19,5°.
+
+      Conclusion. Le rayon se rapproche de la normale : i₂≈19,5°.
+
+
+ 3. Spectres et niveaux d’énergie
+ Un spectre continu contient toutes les longueurs d’onde d’un domaine. Un spectre de raies
+ d’émission est discontinu et caractéristique d’une espèce. Dans le modèle de l’atome, un électron
+
+
+                                                                               Cours de Seconde • page 20
+PHYSIQUE-CHIMIE
+
+
+
+ ne peut occuper que certains niveaux d’énergie. Une transition s’accompagne de l’absorption ou
+ de l’émission d’un photon : ΔE=hf.
+ Schéma à reproduire : niveaux horizontaux E₁<E₂<E₃ ; flèche montante pour une absorption, flèche descendante
+ pour une émission. Plus la transition est énergétique, plus la fréquence du photon est grande.
+
+
+
+
+                                                                                      Cours de Seconde • page 21
+PHYSIQUE-CHIMIE
+
+
+
+
+ Chapitre 4 — Signaux et capteurs
+  Objectifs
+
+  Comprendre une chaîne de mesure ; exploiter tension, courant et résistance ; utiliser
+  diviseur de tension et puissance électrique.
+
+
+  Chaîne de mesure
+
+  Un capteur transforme une grandeur physique (température, lumière, pression…) en signal
+  électrique. La chaîne comporte acquisition, conditionnement, traitement puis affichage ou
+  action. Un signal analogique varie continûment ; un signal numérique est codé.
+
+
+  Lois électriques
+
+  Tension U en volt (V), intensité I en ampère (A), résistance R en ohm (Ω). Loi d’Ohm pour
+  un conducteur ohmique : U=RI. Puissance électrique reçue : P=UI (W).
+
+
+
+ 1. Mesures et branchements
+ Un voltmètre se branche en dérivation aux bornes du dipôle ; un ampèremètre en série. Une
+ mesure doit préciser unité, calibre et incertitude si elle est demandée. Pour une résistance, la
+ caractéristique U=f(I) est une droite passant par l’origine et sa pente vaut R.
+
+      Une résistance de 220 Ω est traversée par I=15 mA.
+
+      Étape 1. Convertir 15 mA=0,015 A.
+
+      Étape 2. U=RI=220×0,015=3,30 V.
+
+      Conclusion. La tension vaut 3,30 V.
+
+
+ 2. Association en série et diviseur
+ Dans un circuit série, le courant est le même dans les dipôles et les tensions s’additionnent. Avec
+ deux résistances en série alimentées par Ue, la tension aux bornes de R₂ vaut :
+
+                                        U₂ = Uₑ × R₂/(R₁+R₂)
+
+      Ue=12 V, R₁=1,0 kΩ et R₂=2,0 kΩ.
+
+      Étape 1. Les résistances sont dans la même unité.
+
+      Étape 2. U₂=12×2/(1+2)=8,0 V.
+
+      Conclusion. La sortie du diviseur fournit 8,0 V.
+
+
+ 3. Puissance et énergie
+ La puissance traduit un débit d’énergie : P=E/Δt. En régime continu, P=UI ; avec la loi d’Ohm,
+ P=RI² ou P=U²/R. L’énergie consommée sur une durée t vaut E=Pt (en joules si P en watts et t en
+ secondes).
+
+
+
+
+                                                                               Cours de Seconde • page 22
+PHYSIQUE-CHIMIE
+
+
+
+
+     Une lampe fonctionne sous 6,0 V et absorbe 0,50 A pendant 10 min.
+
+     Étape 1. P=UI=6,0×0,50=3,0 W.
+
+     Étape 2. t=10×60=600 s ; E=Pt=3,0×600=1800 J.
+
+     Conclusion. La puissance est 3,0 W et l’énergie 1,8 kJ.
+
+  Schéma à reproduire
+
+  Grandeur physique → capteur → tension/courant mesuré → convertisseur/logiciel →
+  affichage. Indiquer le sens du signal et les unités à chaque étape.
+
+
+
+
+                                                                         Cours de Seconde • page 23
+PHYSIQUE-CHIMIE
+
+
+
+
+ Fiche de synthèse — réflexes à adopter
+   En mathématiques
+
+   Identifier le domaine ; choisir la représentation adaptée ; écrire la propriété avant le calcul
+   ; contrôler un signe et une unité ; interpréter le résultat dans le contexte.
+
+
+   En physique-chimie
+
+   Faire un schéma et choisir un système ; convertir les unités ; isoler la grandeur cherchée
+   dans la loi ; remplacer par les valeurs avec unités ; vérifier l’ordre de grandeur et conclure
+   par une phrase.
+
+
+
+ Formules transversales à connaître
+
+     n=m/M • c=n/V • pV=nRT • ΣF⃗=ma⃗ • Ec=½mv² • v=λf • U=RI • P=UI
+
+
+ Fin du cours — penser à compléter les schémas et à refaire les exemples sans regarder les étapes.
+
+
+
+
+                                                                                         Cours de Seconde • page 24
+

@@ -1,0 +1,211 @@
+                                            Chapitre 1 : Corps purs et mélanges.
+                                                   Notions et contenus, capacités exigibles
+   Espèce chimique, corps purs, mélanges d’espèces chimiques, mélanges homogènes et hétérogènes
+    • Citer des exemples courants de corps purs et de mélanges homogènes et hétérogènes.
+   Identification d’espèces chimiques dans un échantillon de matière par des mesures physiques ou des tests chimiques.
+    • Identifier, à partir de valeurs de référence, une espèce chimique par ses températures de changement d’état, sa masse
+       volumique ou par des tests chimiques.
+    • Citer des tests chimiques courants de présence d’eau, de dihydrogène, de dioxygène, de dioxyde de carbone.
+    • Citer la valeur de la masse volumique de l’eau liquide et la comparer à celles d’autres corps purs et mélanges.
+    • Distinguer un mélange d’un corps pur à partir de données expérimentales.
+   Mesurer une température de changement d’état, déterminer la masse volumique d’un échantillon, réaliser une chromatographie sur
+   couche mince, mettre en œuvre des tests chimiques, pour identifier une espèce chimique et, le cas échéant, qualifier l’échantillon
+   de mélange.
+   Composition massique d’un mélange.
+   • Citer la composition approchée de l’air et l’ordre de grandeur de la valeur de sa masse volumique.
+   • Établir la composition d’un échantillon à partir de données expérimentales.
+   Composition volumique de l’air.
+   Mesurer des volumes et des masses pour estimer la composition de mélanges.
+   • Citer des exemples courants de corps purs et de mélanges homogènes et hétérogènes.
+   Capacité numérique : utiliser des pourcentages et les fractions.
+                                                    Activités documentaires, TP, exercices
+   TP 1a : Précision d’une mesure de volume
+   Cours : Les corps pur et les mélanges (homogène et hétérogène) - Pourcentages massique et volumique page 17
+   TP 1b : Déterminer la composition d’un bonbon
+   Cours : Identification d’espèces par les grandeurs physiques (température de changement d’état solubilité, masse volumique (TP),
+            densité) page 18 - Identification par tests chimiques page 19 - Identification par chromatographie sur couche mince (TP)
+            page 19
+   Exercices
+   En autonomie : QCM page 21, exercices résolus (1 et 2 pages 22 et 23), exercices corrigés pages 24
+                   à 28 (3, 5, 7, 8, 11, 13, 15, 17, 19, 22, 26, 27)
+   Appliquer le cours : 4, 6, 9 page 24 - 12, 14, 16 page 25 - S’entraîner : 20 page 26 - 23, 25 page 27
+
+  1.   Les corps purs et les mélanges
+  a. Espèces chimiques
+  La matière est constituée               d'entités      chimiques
+  (molécules, atomes, ions).
+  Une espèce chimique est un ensemble d'entités
+  chimiques identiques.
+  Une espèce chimique est caractérisée par sa formule, son
+  aspect physique (état physique à température ambiante,
+  couleur, odeur, etc.) et ses propriétés physiques (température de fusion, d'ébullition, masse volumique, indice de
+  réfraction, etc.) et ses propriétés chimiques.
+                     Exemples d'espèces chimiques : l'eau, l'acide acétique, le cuivre, le chlorure de sodium.
+  b. Corps purs et mélanges
+
+              Corps purs : constitué d’un seule
+                                                                           Mélange : constitué de plusieurs espèces chimiques
+                      espèce chimique
+             Corps pur    Corps pur composé                               Mélange homogène                             Mélange hétérogène
+              simple
+Définition   Constitué         Constitué de plusieurs types      Constitué d'une seule                              constitué de plusieurs phases
+             d'un    seul      d'atomes : Ces atomes             phase                                              (solide, liquide, gaz), c'est-à-dire
+             type              différents restent dans des                                                          plusieurs corps que l'on peut
+             d'atomes          proportions bien définies                                                            distinguer à l’œil nu
+Exemples     L'argent Ag, le   l'eau H2O, l'éthanol C2H6O, le    L'acier est un mélange homogène de carbone         L'eau et le fer en poudre
+             charbon C , le    sel (Na+ ; Cl - ) : chlorure de   et de fer. C'est un alliage. Le thé est aussi un   forment un mélange
+             dioxygène O2.     sodium)                           mélange homogène, constitué de très                hétérogène.
+                                                                 nombreuses espèces chimiques : eau,                                         Eau
+                                                                 caféine, acides aminés, minéraux, etc..
+                                                                                                                                                Fer
+
+                                                                                                                                 Page 1|4
+                                                    Mélanges de liquides
+           Mélange homogène                                           Mélange hétérogène
+   Des liquides sont miscibles lorsqu'ils se          Des liquides ne sont pas miscibles lorsqu'ils forment un
+   mélangent l'un avec l'autre pour former un         mélange hétérogène, constitué de plusieurs phases distinctes.
+   mélange homogène.
+  L'eau et l'éthanol sont deux liquides miscibles
+  en toutes proportions ; ils forment un mélange
+  homogène et il est alors impossible de
+  distinguer l'un de l'autre dans la solution
+  résultante.
+                                                      https://www.youtube.com/watch?v=c8iLLhbtHaM
+
+Vidéo sur les mélanges : https://www.youtube.com/watch?v=Bome0C4fVLs
+
+
+
+
+                                Molécules : Avec 4
+Atomes    Molécules avec 2      atomes dont 3 identiques
+          atomes identiques
+
+2.       Pourcentages massique et volumique                                       vidéo https://www.youtube.com/watch?v=_HsJt-gmsFk
+La proportion en masse d’une espèce chimique E dans un mélange est le quotient de la masse m(E) de cette espèce
+                                                            𝑚(𝐸)
+par la masse totale mtotale du mélange soit                          . Une proportion est comprise entre 0 et 1.
+                                                           𝑚𝑡𝑜𝑡𝑎𝑙𝑒
+                                                                                                                            𝑚(𝐸)
+Le pourcentage massique d’une espèce chimique E est la proportion en masse exprimée en % :                                            x 100. Le
+                                                                                                                           𝑚𝑡𝑜𝑡𝑎𝑙𝑒
+pourcentage est compris entre 0 et 100 %.
+La proportion en volume d’une espèce chimique E dans un mélange est le quotient du volume V(E) de cette espèce
+                                                      𝑉(𝐸)
+par le volume total Vtotal du mélange soit                     .
+                                                      𝑉𝑡𝑜𝑡𝑎𝑙
+Le pourcentage volumique d’une espèce chimique E est la proportion en volume
+                        𝑉(𝐸)
+exprimée en % :                 x 100
+                       𝑉𝑡𝑜𝑡𝑎𝑙
+
+La composition d’un mélange peut être décrite par le pourcentage massique ou
+volumique de chacune des espèces qui le constituent.
+Exemple : L’air contient en volume environ 78 % de diazote N2, 21 % de dioxygène
+O2 et 1 % d’autre gaz.       Vidéo : https://www.youtube.com/watch?v=fcQui-E_XQI
+
+3.       Grandeurs physiques d’une espèce chimique
+a. Masse volumique et densité                       Vidéo : https://www.youtube.com/watch?v=K_
+Une espèce chimique est caractérisée par sa masse volumique, ou par sa densité,
+qui dépend de son état physique.
+Selon son état physique, la masse volumique d'un échantillon
+peut considérablement varier : elle dépend de la
+température par exemple.
+La masse volumique  d'un échantillon de matière est une
+grandeur égale au quotient de sa masse 𝑚 par le volume 𝑉
+                                                                         𝒎
+qu'il occupe. Elle est donc définie par la relation :  =                     .
+                                                                          𝑽
+Unité : la masse s'exprime en gramme (g), le volume en
+centimètre cube (cm3) et la masse volumique en gramme par centimètre cube (g.cm-3). On peut aussi l’exprimer en
+g.mL-1 ou kg.m-3. (1 cm3 = 1 mL)
+Exemples : Masses volumiques de quelques espèces chimiques, à = 20 °C
+       (eau liquide) = 1,00 g/cm3 = 1,00 kg /L = 1000 kg/m3 ;  (air ) = 1,3 g/L ; (eau solide) = 0,92 g·cm-3 à = 0 °C.
+                                                                                                                            Page 2|4
+La densité 𝒅 est une grandeur sans unité. La densité 𝑑 d'un liquide ou d'un solide est égale au quotient de la masse
+                                                                                         𝝆
+volumique  de l'échantillon par la masse volumique de l'eau 𝜌𝑒𝑎𝑢 : 𝒅 =
+                                                                                       𝝆𝒆𝒂𝒖
+Dans cette relation, les masses volumiques doivent être exprimées dans la même unité.
+b. Température de changement d'état
+Le passage de la matière d'un état à un autre (solide, liquide ou gazeux)
+est appelé changement d'état. Pour un corps pur, il se produit à
+une température donnée, qui dépend de l'espèce chimique
+constituant le corps pur.
+Le passage de l'état solide à liquide (ou liquide à solide) se produit à
+la température de fusion, notée θfusion. Le passage de l'état liquide
+à l'état gazeux (ou de gazeux à liquide) se produit à la température
+d'ébullition, notée θébullition.
+Voir le TD : reconnaître grâce aux températures de changement d’état.
+Remarques :                                                                                                                                 Gaz
+                                                                                                                        Liquide
+• La condensation liquide est l’autre appellation du passage de l'état gazeux à l'état                   Solide
+   liquide.
+• L'évaporation est un phénomène qui se produit à la surface d'un échantillon (solide ou
+   liquide), à n'importe quelle température et qu'il ne faut pas confondre avec l'ébullition,
+   qui se produit à une température donnée, et qui concerne l'ensemble de l'échantillon.             Température de changement d’état de l’eau
+c. Solubilité
+La solubilité 𝒔 (exprimée en g.L-1) d'une espèce chimique (solide, liquide ou gaz)
+correspond à la masse maximale de cette espèce que l'on peut dissoudre dans un litre
+de solution (généralement de l'eau).
+La solubilité dépend de la température et de la nature de la solution.
+Remarque : une solution saturée est une solution qui contient la masse maximale de soluté que l'on
+peut y dissoudre.
+d. Indice de réfraction                 Voir chapitre 14.
+4.   Identification d’espèces chimiques
+a. Identification par les propriétés physiques
+On peut identifier une espèce chimique par ses caractéristiques physiques (aspect, couleur), mais surtout par ses
+propriétés physiques.
+Pour identifier une espèce chimique, il faut comparer ses propriétés physiques à celles qui sont référencées (voir
+l'énoncé, les fiches de sécurité du NIOSH, le livre Handbook of Chemistry ou Wikipedia).
+Exemple : pour déterminer expérimentalement la température d'ébullition, de fusion, la masse volumique ou la solubilité dans
+un solvant, on compare la valeur obtenue avec celles fournies dans les tables de référence.
+b. Identification par des tests chimiques
+Il existe des tests chimiques qui permettent de reconnaître la présence de certaines espèces chimiques.
+Pour identifier une espèce chimique, on peut réaliser des tests chimiques.
+                                                                   Exemples de tests chimiques
+
+
+
+                                                                                                        En présence d’une flamme, le dihydrogène
+                                                                                                        produit une détonation caractéristique
+                                                                                                        appelée jappement ou cri du chien.
+
+
+
+
+                                                                               En présence de dioxygène, une bûchette
+                                                                               incandescente se rallume vivement.
+
+
+
+
+Voir livre page 305.
+                                                                                                                                  Page 3|4
+c.   Identification par la chromatographie
+Principe :
+• Les espèces chimiques d’un mélange sont entraînées par une phase mobile (l’éluant) qui monte par capillarité dans
+  une phase fixe constituée de papier ou de silice. La figure obtenue par chromatographie est appelée
+  chromatogramme.
+• Une CCM (chromatographie sur couche mince), c'est quoi ?
+  Il s'agit d'une technique d'analyse qui s'appuie sur les différences d'affinités de substances chimiques entre une
+  phase fixe, la plaque, et une phase mobile, l'éluant. Elle permet la séparation et l’identification des espèces chimiques
+  présentes dans un mélange.
+
+
+
+Protocole :
+
+
+
+
+                                                                           Chaque espèce chimique s'élève à une hauteur
+                                                                           spécifique, c'est ce qui permet de l'identifier
+                                                                           par comparaison avec l'élévation d'une espèce
+                                                                           témoin.
+
+
+
+
+                                                                                                          Page 4|4
+

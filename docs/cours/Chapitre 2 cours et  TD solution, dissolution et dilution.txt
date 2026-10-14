@@ -1,0 +1,142 @@
+                                      Chapitre 2 : TD sur les solutions
+
+                                           Notions et contenus, capacités exigibles
+Solvant, soluté.
+• Identifier le soluté et le solvant à partir de la composition ou du mode opératoire de préparation d’une solution.
+Concentration en masse, concentration maximale d’un soluté.
+• Distinguer la masse volumique d’un échantillon et la concentration en masse d’un soluté au sein d’une solution.
+• Déterminer la valeur de la concentration en masse d’un soluté à partir du mode opératoire de préparation
+    d’une solution par dissolution ou par dilution.
+Mesurer des masses pour étudier la variabilité du volume mesuré par une pièce de verrerie ; choisir et utiliser la verrerie adaptée
+pour préparer une solution par dissolution ou par dilution.
+Dosage par étalonnage.
+• Déterminer la valeur d’une concentration en masse et d’une concentration maximale à partir de résultats expérimentaux.
+Déterminer la valeur d’une concentration en masse à l’aide d’une gamme d’étalonnage (échelle de teinte ou mesure de masse
+volumique).
+Capacité mathématique : utiliser une grandeur quotient pour déterminer le numérateur ou le dénominateur.
+
+                                            Activités documentaires, TP, exercices
+TP2a : Préparer une solution par dissolution
+Cours : Solution, soluté et solvant – Concentration en masse page 35
+        Préparation de solution par dissolution page 36
+TP2b : Préparation d’une échelle de teintes
+Cours : Préparation d’une solution par dilution page 36 – Dosages à l’aide d’une gamme d’étalonnage
+Exercices
+En autonomie : QCM page 39, exercices résolus (1 et 2 pages 40 et 41), exercices corrigés pages 42 à 48 (3, 5, 7, 9, 11,
+                  14, 16, 18, 20, 22, 24, 26, 28, 29, 36, 37)
+Appliquer le cours : 4, 5, 6, 8, 12, 13, 15, 17 pages 42 – 43
+                       21, 23 page 44 – 24 page 44 – 27 page 45
+S’entraîner : 30 page 46 - 31 page 46
+1- Qu’est-ce qu’une solution, un solvant, un soluté ?
+Une solution est un …………………………………………………………… obtenu par l’introduction :
+- d’un soluté : espèce chimique minoritaire qui va se dissoudre ;
+- dans un solvant : espèce chimique majoritaire (exemple : l’eau pour une solution aqueuse)
+
+2- Comment préparer une solution ?
+https://www.youtube.com/watch?v=7y0wohip4q4&lc=z12pddiq1wecgjkgz04cdp4xbn2mj11bcyg0k
+
+Il existe deux méthodes de préparation d’une solution :
+a. par dissolution en utilisant une ………………………………………
+
+Etape 1 : Pesée du soluté                                  Etape 2 :
+• Tarer la balance avec la coupelle vide.                    • Introduire le soluté dans la fiole jaugée grâce à l’entonnoir.
+• Grâce à la spatule, déposer le soluté dans la              • Rincer la coupelle et l’entonnoir à l’eau distillée afin de
+  coupelle jusqu’à la masse désirée.                           récupérer tout le soluté.
+
+
+spatule                  soluté
+
+ coupelle
+
+
+
+
+                                         Balance
+                                         électronique
+
+
+   Etape 3 :
+   •      Ajouter de l’eau distillée jusqu’au ¾ de la fiole.
+   •      Boucher puis agiter pour homogénéiser la solution.
+   Etape 4 :
+   •      Remplir précisément à l’eau distillée jusqu’au trait de jauge.
+   •      Boucher la fiole puis secouer pour homogénéiser.
+
+
+
+
+                                                                                                                  Solution
+                                                                                                                  terminée
+
+
+
+
+b. par dilution en utilisant une ……………………………………… et une ………………………………………………
+
+Etape 1 :
+• Verser la solution mère dans un bécher.
+• Prélever la solution mère après avoir rincé la pipette jaugée avec l’eau distillée et la
+  solution mère.
+• Verser ce prélèvement dans la fiole jaugée.
+
+Etape 2 :
+• Ajouter de l’eau distillée jusqu’à environ ¾ de la fiole.
+• Boucher la fiole et secouer pour homogénéiser la solution.                                                 Solution
+                                                                                                             mère
+                                                                                                                  Solution
+                                                                                                                  fille
+
+
+
+
+Etape 3 :
+• Remplir précisément à l’eau distillée jusqu’au trait de jauge.
+• Boucher la fiole puis secouer pour homogénéiser.
+
+3- Qu’est-ce que la concentration en masse ?
+La concentration en masse notée 𝐶𝑚 ou titre massique notée 𝑡 indique ……………………………………………… dissous
+dans …………………… de solution. On peut déterminer une concentration en masse par le calcul en utilisant la relation
+suivante :                                                                                   …………………………………………
+                                                                        𝒎𝒔𝒐𝒍𝒖𝒕é              ……..….
+     ……………………………………                                      t (ou 𝑪𝒎 ) =
+     ………….
+                                                                        𝑽𝒔𝒐𝒍𝒖𝒕𝒊𝒐𝒏
+                                                                                         ………………………………………
+                                                                                         ……….
+
+Expérimentalement, on peut déterminer une concentration en masse en effectuant un dosage par…………………….
+• Si l’espèce chimique étudiée est colorée, on                      • Sinon, on mesure une grandeur physique et on
+  peut      comparer      visuellement    avec                        trouve la concentration en masse par lecture
+  ……………………………………….                                                    graphique sur une ……………………………………………
+
+                                                                           Masse volumique
+
+
+
+
+                                                                                                  Ne pas confondre concentration en
+                                                                                                  masse t (ou Cm) avec la masse
+                                                                                                  volumique .
+
+                                                                                               Concentration en masse
+
+
+
+                        Solution mère                                                        Solution fille
+                  Solution que l’on doit diluer                                     Solution obtenue après dilution
+                        Exemple : sirop                                                 Exemple : Sirop + eau
+ Autre
+ exemple :                                    Café trop sucré                                               On rajoute de
+                                              et trop fort                                                  l’eau chaude
+
+
+ • Volume V0                                                         • Volume Vf
+                               𝑚                                                                   𝑚
+ • Concentration en masse Cm0 = 𝑠𝑢𝑐𝑟𝑒                                • Concentration en masse Cmf = 𝑠𝑢𝑐𝑟𝑒
+                                         𝑉0                                                                 𝑉𝑓
+ • Masse de sucre msucre = V0 x Cm0                                  • Masse de sucre msucre = Vf x Cmf
+    La masse de sucre est identique dans les solutions mère et fille, on dit qu’il y a conservation de la masse lors de la dilution
+                                      𝐂𝐦𝟎      𝐕𝐟
+             V0 x Cm0 = Vf x Cmf ou           =        = F facteur de dilution          F est sans unité et toujours >1
+                                        𝐂𝐦𝐟       𝐕𝟎
+

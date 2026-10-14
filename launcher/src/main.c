@@ -1,4 +1,4 @@
-/* NumPlay: one app for all the games. */
+/* NumPlay: embedded course reader. */
 #include <eadk.h>
 #include "np.h"
 #include "sys.h"
@@ -43,12 +43,6 @@ int main(void) {
     int r = np_home(&selected, returning);
     returning = false;
     if (r == -2) break;
-    if (r == -3) {
-      /* Back from subjects returns to the spreadsheet, not to a game menu. */
-      if (!np_matrices(&cfg)) break;
-      returning = true;
-      continue;
-    }
     if (r == -1) {
       np_settings();
       np_progress_backup();

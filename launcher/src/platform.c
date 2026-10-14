@@ -13,6 +13,7 @@ uint32_t np_keys(void) {
   if (DOWN(eadk_key_back)) out |= K_BACK;
   if (DOWN(eadk_key_home) || DOWN(eadk_key_on_off)) out |= K_HOME;
   if (DOWN(eadk_key_backspace)) out |= K_BACKSPACE;
+if (DOWN(eadk_key_pi)) out |= K_PI;
 #undef DOWN
   return out;
 }

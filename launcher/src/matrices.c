@@ -344,8 +344,6 @@ bool np_matrices(const np_config_t *cfg) {
     prev = k;
 #define HIT(key) ((hit >> (key)) & 1)
     if (HIT(KEY_HOME) || HIT(KEY_ONOFF)) return false;
-    /* Pi is the reader shortcut; keep the configured secret and menu paths. */
-    if (HIT(KEY_PI)) return true;
     uint8_t sk = secret_keys[cfg->secret];
     if (sk != 255 && HIT(sk)) return true;
     if (frame % 600 == 0) status_bar(); /* the battery, now and then */

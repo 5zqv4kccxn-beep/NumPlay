@@ -17,7 +17,7 @@ typedef uint16_t color_t;
 /* Keys, independent of the calculator's numbering. The number pad doubles
  * as arrows (8 4 6 2) and 5 as OK. */
 enum {
-  K_LEFT = 1, K_RIGHT = 2, K_UP = 4, K_DOWN = 8, K_OK = 16, K_BACK = 32, K_HOME = 64, K_BACKSPACE = 128
+  K_LEFT = 1, K_RIGHT = 2, K_UP = 4, K_DOWN = 8, K_OK = 16, K_BACK = 32, K_HOME = 64, K_BACKSPACE = 128, K_PI = 256
 };
 
 /* ---- platform (platform.c) */
