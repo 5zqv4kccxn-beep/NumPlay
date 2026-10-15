@@ -10,7 +10,7 @@
 #include "np.h"
 #include "font.h"
 #include "sys.h"
-#include "../../games/common/np_text.h"
+#include "np_text.h"
 
 static color_t blend(color_t bg, color_t fg, int a16) {
   if (a16 >= 15) return fg;

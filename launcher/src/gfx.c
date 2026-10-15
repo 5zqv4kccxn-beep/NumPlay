@@ -1,6 +1,6 @@
 #include "gfx.h"
 #include <string.h>
-#include "../../games/common/np_text.h"
+#include "np_text.h"
 
 color_t *gfx_buf;
 int gfx_y0, gfx_y1;

@@ -17,6 +17,13 @@ if (DOWN(eadk_key_pi)) out |= K_PI;
   if (DOWN(eadk_key_zero)) out |= K_DIGIT0;
   if (DOWN(eadk_key_one)) out |= K_DIGIT1;
   if (DOWN(eadk_key_two)) out |= K_DIGIT2;
+  if (DOWN(eadk_key_three)) out |= K_DIGIT3;
+  if (DOWN(eadk_key_four)) out |= K_DIGIT4;
+  if (DOWN(eadk_key_five)) out |= K_DIGIT5;
+  if (DOWN(eadk_key_six)) out |= K_DIGIT6;
+  if (DOWN(eadk_key_seven)) out |= K_DIGIT7;
+  if (DOWN(eadk_key_eight)) out |= K_DIGIT8;
+  if (DOWN(eadk_key_nine)) out |= K_DIGIT9;
 #undef DOWN
   return out;
 }

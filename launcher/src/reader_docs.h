@@ -1513,14 +1513,81 @@ static const char *const np_doc_2_lines[] = {
   "",
   "Cours de Seconde page 24",
 };
-/* Sommaire de navigation Tableur : les cours ci-dessous sont regroupes par matiere.
- * Les index pointent vers np_docs[] et sont consommes par l'accueil. */
-static const char *const np_tableur_contents[] = {
-  "CHIMIE | 1. Corps purs et melanges | 2. Solutions, dissolution et dilution",
-  "MATHS | 1. Nombres et calculs | 2. Fonctions | 3. Geometrie du plan | 4. Geometrie de l'espace | 5. Statistiques et probabilites | 6. Algorithmique",
-  "PHYSIQUE | 1. Transformations chimiques | 2. Mouvement et interactions | 3. Ondes et signaux | 4. Signaux et capteurs",
+typedef struct { const char *label; unsigned line; } np_toc_entry_t;
+typedef struct { const np_toc_entry_t *entries; unsigned count; } np_toc_t;
+static const np_toc_entry_t np_toc_0[] = {
+  {"1. Les corps purs et les melanges", 64},
+  {"a. Especes chimiques", 65},
+  {"b. Corps purs et melanges", 80},
+  {"2. Pourcentages massique et volumique", 137},
+  {"3. Grandeurs physiques d'une espece chimique", 173},
+  {"a. Masse volumique et densite", 174},
+  {"b. Temperature de changement d'etat", 237},
+  {"c. Solubilite", 243},
+  {"d. Indice de refraction", 255},
+  {"4. Identification d'especes chimiques", 256},
+  {"a. Identification par les proprietes physiques", 257},
+  {"b. Identification par des tests chimiques", 269},
+  {"c. Identification par la chromatographie", 280},
 };
-
+static const np_toc_entry_t np_toc_1[] = {
+  {"1. Qu'est-ce qu'une solution, un solvant, un solute ?", 42},
+  {"2. Comment preparer une solution ?", 63},
+  {"a. Par dissolution", 68},
+  {"b. Par dilution", 102},
+  {"3. Qu'est-ce que la concentration en masse ?", 129},
+};
+static const np_toc_entry_t np_toc_2[] = {
+  {"PARTIE I — MATHEMATIQUES", 57},
+  {"Chapitre 1 — Nombres et calculs", 65},
+  {"1. Calculer sans perdre le sens", 90},
+  {"2. Valeur absolue, distance et inequations", 113},
+  {"3. Encadrements et ordre de grandeur", 132},
+  {"Chapitre 2 — Fonctions", 165},
+  {"1. Trois representations complementaires", 190},
+  {"2. Fonctions de reference", 215},
+  {"3. Resoudre graphiquement", 239},
+  {"Chapitre 3 — Geometrie dans le plan", 261},
+  {"1. Coordonnees et milieu", 286},
+  {"2. Droites", 309},
+  {"3. Parallelisme et orthogonalite", 329},
+  {"Chapitre 4 — Geometrie dans l'espace", 340},
+  {"1. Sections planes", 364},
+  {"2. Thales dans l'espace", 390},
+  {"3. Unites et controle", 410},
+  {"Chapitre 5 — Statistiques et probabilites", 423},
+  {"1. Indicateurs", 448},
+  {"2. Probabilites et representations", 477},
+  {"3. Tableaux et frequences", 511},
+  {"Chapitre 6 — Algorithmique et programmation", 536},
+  {"1. Variables et conditions", 557},
+  {"2. Boucles et accumulation", 605},
+  {"3. Fonctions et verification", 636},
+  {"PARTIE II — PHYSIQUE-CHIMIE", 664},
+  {"Chapitre 1 — Constitution et transformations de la matiere", 682},
+  {"1. Tableau periodique et stabilite", 696},
+  {"2. Equations chimiques", 724},
+  {"3. Avancement et reactif limitant", 754},
+  {"4. Exemple de quantite de matiere", 786},
+  {"Chapitre 2 — Mouvement et interactions", 813},
+  {"1. Forces et principe d'inertie", 835},
+  {"2. Principe fondamental de la dynamique", 875},
+  {"3. Energie et travail", 900},
+  {"4. Gravitation et puissance", 923},
+  {"Chapitre 3 — Ondes et signaux", 923},
+  {"1. Mesurer une periode et une frequence", 923},
+  {"2. Refraction et indice optique", 923},
+  {"3. Spectres et niveaux d'energie", 923},
+  {"Chapitre 4 — Signaux et capteurs", 923},
+  {"1. Mesures et branchements", 923},
+  {"2. Association en serie et diviseur", 923},
+  {"3. Puissance et energie", 923},
+};
+static const np_toc_t np_tocs[] = {
+  {np_toc_0, sizeof(np_toc_0)/sizeof(np_toc_0[0])},
+  {np_toc_1, sizeof(np_toc_1)/sizeof(np_toc_1[0])},
+  {np_toc_2, sizeof(np_toc_2)/sizeof(np_toc_2[0])},
+};
 static const np_doc_t np_docs[] = {
   {"Chimie \u2014 chapitre 1", np_doc_0_lines, sizeof(np_doc_0_lines)/sizeof(np_doc_0_lines[0])},
   {"Chimie \u2014 chapitre 2", np_doc_1_lines, sizeof(np_doc_1_lines)/sizeof(np_doc_1_lines[0])},

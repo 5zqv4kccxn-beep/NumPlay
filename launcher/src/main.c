@@ -28,33 +28,9 @@ static bool home_pressed;
 
 int main(void) {
   np_session_begin();
-  np_finish_pending_uninstalls();
-  /* just updated? the saves come back from their copy, then the copy is refreshed */
-  np_progress_restore();
-  np_progress_backup();
-  /* started as Matrices (Settings): NumPlay opens only through its secret */
-  np_config_t cfg;
-  np_config_load(&cfg);
-  if (cfg.disguise && !np_matrices(&cfg)) return np_session_end();
   np_wait_release();
-  int selected = np_game_count ? 0 : -1;
-  bool returning = false;
-  for (;;) {
-    int r = np_home(&selected, returning);
-    returning = false;
-    if (r == -2) break;
-    if (r == -1) {
-      np_settings();
-      np_progress_backup();
-      continue;
-    }
-    home_pressed = false;
-    np_game_run(r);
-    np_progress_backup();
-    /* Home in a game goes all the way home, like everywhere on the calculator */
-    if (home_pressed) break;
-    np_wait_release();
-    returning = true;
-  }
+  np_config_t cfg; np_config_load(&cfg);
+  (void)cfg;
+  np_sheet();
   return np_session_end();
 }
