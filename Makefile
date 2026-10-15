@@ -1,34 +1,40 @@
+# Tableur : lecteur de cours pour NumWorks (sans jeux).
 NWLINK ?= npx --yes -- nwlink@1.0.0
-ARM_CC ?= arm-none-eabi-gcc
-ARM_STRIP ?= arm-none-eabi-strip
-B := build
+ARM_CC = arm-none-eabi-gcc
+ARM_STRIP = arm-none-eabi-strip
+B = build
 VERSION := $(shell cat VERSION)
 EADK_CFLAGS := $(shell $(NWLINK) eadk-cflags-device)
-ARM_CFLAGS := -std=gnu11 -mthumb -mfloat-abi=hard -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 $(EADK_CFLAGS) -DPLATFORM_DEVICE=1 -DNP_VERSION='"$(VERSION)"' -Os -Wall -Wextra -Wno-unused-parameter -Ilauncher/src
-ARM_LINK := -nostartfiles --specs=nano.specs -Wl,--relocatable -Wl,--gc-sections -Wl,-e,main -Wl,-u,eadk_app_name -Wl,-u,eadk_app_icon
-SOURCES := $(wildcard launcher/src/*.c)
-HEADERS := $(wildcard launcher/src/*.h) launcher/src/reader_docs.h VERSION
+ARM_CFLAGS = -std=gnu11 $(EADK_CFLAGS) -DNP_VERSION='"$(VERSION)"' -Os -Wall -Wextra -Wno-unused-parameter -Ilauncher/src -flto
+ARM_LINK = -nostartfiles --specs=nano.specs -Wl,--relocatable -Wl,--gc-sections -Wl,-e,main -Wl,-u,eadk_app_name -Wl,-u,eadk_app_icon -Wl,-u,eadk_api_level
 
-.PHONY: Tableur nwa check
-Tableur: $(B)/Tableur.nwa
+# Liste FIXE des sources : les anciens fichiers (matrices, settings, live, inflate) sont ignorés.
+SRC_NAMES = compat font_data gfx home icons main platform sheet sys ui
+ARM_OBJ = $(addprefix $(B)/arm/,$(addsuffix .o,$(SRC_NAMES)))
 
+.PHONY: nwa check clean
 nwa: $(B)/Tableur.nwa
 
-check: $(B)/Tableur.nwa
-	test -s $(B)/Tableur.nwa
+$(B)/arm/%.o: launcher/src/%.c
+	mkdir -p $(B)/arm
+    $(ARM_CC) $(ARM_CFLAGS) -c $< -o $@
 
-$(B):
-	mkdir -p $(B)/arm $(B)/variant
+$(B)/variant/Tableur-name.o:
+    mkdir -p $(B)/variant
+    printf '%s\n' 'const char eadk_app_name[] __attribute__((section(".rodata.eadk_app_name"))) = "Tableur";' > $(B)/variant/Tableur-name.c
+    $(ARM_CC) $(ARM_CFLAGS) -c $(B)/variant/Tableur-name.c -o $@
 
-$(B)/arm/%.o: launcher/src/%.c $(HEADERS) | $(B)
-	$(ARM_CC) $(ARM_CFLAGS) -flto -c $< -o $@
+$(B)/variant/Tableur-icon.o:
+    mkdir -p $(B)/variant
+    printf '%s\n' '__attribute__((section(".rodata.eadk_app_icon"))) const unsigned char eadk_app_icon[1] = {0};' > $(B)/variant/Tableur-icon.c
+    $(ARM_CC) $(ARM_CFLAGS) -c $(B)/variant/Tableur-icon.c -o $@
 
-$(B)/variant/Tableur-name.o: launcher/app_name.c Makefile | $(B)
-	$(ARM_CC) $(ARM_CFLAGS) '-DNP_APP_NAME="Tableur"' -c $< -o $@
+$(B)/Tableur.nwa: $(ARM_OBJ) $(B)/variant/Tableur-name.o $(B)/variant/Tableur-icon.o
+    $(ARM_CC) $(ARM_CFLAGS) $(ARM_LINK) $^ -o $(B)/Tableur.elf
+    $(NWLINK) elf-to-nwa $(B)/Tableur.elf $@
 
-$(B)/variant/Tableur-icon.o: launcher/assets/icon.png | $(B)
-	$(NWLINK) png-icon-o $< $@
+check:
+    @test -f $(B)/Tableur.nwa && echo "OK : $(B)/Tableur.nwa" || (echo "ERREUR : nwa absent" && exit 1)
 
-$(B)/Tableur.nwa: $(patsubst launcher/src/%.c,$(B)/arm/%.o,$(SOURCES)) $(B)/variant/Tableur-name.o $(B)/variant/Tableur-icon.o
-	$(ARM_CC) $(ARM_CFLAGS) $(ARM_LINK) -flinker-output=nolto-rel -o $@ $^ -lm -lgcc
-	$(ARM_STRIP) --strip-unneeded $@
+clean:
+    rm -rf $(B)
