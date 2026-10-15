@@ -9,8 +9,13 @@ ARM_LINK := -nostartfiles --specs=nano.specs -Wl,--relocatable -Wl,--gc-sections
 SOURCES := $(wildcard launcher/src/*.c)
 HEADERS := $(wildcard launcher/src/*.h) launcher/src/reader_docs.h VERSION
 
-.PHONY: Tableur
+.PHONY: Tableur nwa check
 Tableur: $(B)/Tableur.nwa
+
+nwa: $(B)/Tableur.nwa
+
+check: $(B)/Tableur.nwa
+	test -s $(B)/Tableur.nwa
 
 $(B):
 	mkdir -p $(B)/arm $(B)/variant
@@ -19,11 +24,11 @@ $(B)/arm/%.o: launcher/src/%.c $(HEADERS) | $(B)
 	$(ARM_CC) $(ARM_CFLAGS) -flto -c $< -o $@
 
 $(B)/variant/Tableur-name.o: launcher/app_name.c Makefile | $(B)
-	$(ARM_CC) $(ARM_CFLAGS) '-DNP_APP_NAME=\"Tableur\"' -c $< -o $@
+	$(ARM_CC) $(ARM_CFLAGS) '-DNP_APP_NAME="Tableur"' -c $< -o $@
 
 $(B)/variant/Tableur-icon.o: launcher/assets/icon.png | $(B)
 	$(NWLINK) png-icon-o $< $@
 
 $(B)/Tableur.nwa: $(patsubst launcher/src/%.c,$(B)/arm/%.o,$(SOURCES)) $(B)/variant/Tableur-name.o $(B)/variant/Tableur-icon.o
-    $(ARM_CC) $(ARM_CFLAGS) $(ARM_LINK) -flinker-output=nolto-rel -o $@ $^ -lm -lgcc
-    $(ARM_STRIP) --strip-unneeded $@
+	$(ARM_CC) $(ARM_CFLAGS) $(ARM_LINK) -flinker-output=nolto-rel -o $@ $^ -lm -lgcc
+	$(ARM_STRIP) --strip-unneeded $@
