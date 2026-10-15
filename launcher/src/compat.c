@@ -6,7 +6,7 @@
  * itself, in cells of the firmware's sizes (7 x 14, or 10 x 18 large) so that
  * the games' layouts stay as they are, with NumPlay's own font. So it does too
  * in a language build for a text with letters the firmware has no font for
- * (Chinese: two cells each, from the 12-pixel font of games/common/np_text.h). */
+ * (Chinese: two cells each, from the 12-pixel font of shared text helpers). */
 #include "np.h"
 #include "font.h"
 #include "sys.h"

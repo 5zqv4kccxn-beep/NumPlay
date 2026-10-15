@@ -278,7 +278,7 @@ static const np_glyph_t *glyph(const np_font_t *f, char ch) {
   return i < f->count ? &f->glyphs[i] : &f->glyphs['?' - f->first];
 }
 
-/* Language builds (games/common/np_text.h): the letter at *s, *s moved past it; its glyph, or NULL
+/* Language builds (shared text helpers): the letter at *s, *s moved past it; its glyph, or NULL
  * for one of the 12-pixel font (Chinese) */
 static const np_glyph_t *glyph_at(const np_font_t *f, const char **s, uint32_t *cp) {
   if (!NP_TEXT_EXTRA || (uint8_t)**s < 0x80) {

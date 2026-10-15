@@ -1,53 +1,6 @@
 #include "ui.h"
-#include "inflate.h"
-#include "live.h"
 
-/* ---- screenshots: decoded on demand into a few slots of the arena */
-#define MAX_SLOTS 6
-typedef struct {
-  int16_t game, shot;
-  uint32_t used;
-  uint8_t *px;
-} slot_t;
-static slot_t slots[MAX_SLOTS];
-static int nslots;
-static uint32_t lru_clock;
-static np_inflate_tables_t *tables;
-
-void ui_init(void) {
-  np_alloc_reset();
-  gfx_init();
-  tables = np_alloc(np_inflate_tables_size());
-  live_init(); /* its small tables first: the screenshot slots below take all that is left */
-  nslots = 0;
-  while (nslots < MAX_SLOTS) {
-    uint8_t *p = np_alloc(SHOT_W * SHOT_H);
-    if (!p) break;
-    slots[nslots++] = (slot_t){-1, -1, 0, p};
-  }
-}
-
-const uint8_t *ui_shot(int game, int shot) {
-  if (game < 0 || !np_game_installed(game) || !nslots) return 0;
-  const np_game_t *g = &np_games[game];
-  if (shot < 0 || shot >= g->nshots) return 0;
-  slot_t *best = &slots[0];
-  for (int i = 0; i < nslots; i++) {
-    if (slots[i].game == game && slots[i].shot == shot) {
-      slots[i].used = ++lru_clock;
-      return slots[i].px;
-    }
-    if (slots[i].used < best->used) best = &slots[i];
-  }
-  const np_shot_t *s = &g->shots[shot];
-  best->game = -1;
-  if (s->w != SHOT_W || s->h != SHOT_H) return 0;
-  if (np_inflate(best->px, SHOT_W * SHOT_H, s->z, s->zsize, tables) != SHOT_W * SHOT_H) return 0;
-  best->game = (int16_t)game;
-  best->shot = (int16_t)shot;
-  best->used = ++lru_clock;
-  return best->px;
-}
+void ui_init(void) { np_alloc_reset(); gfx_init(); }
 
 /* ---- input */
 uint32_t ui_poll(ui_keys_t *k) {

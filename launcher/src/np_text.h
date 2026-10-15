@@ -3,7 +3,7 @@
  *
  * T("...") marks a text players read. In English it is the text itself; for a
  * language build, tools/lang.py copies the sources and puts each text's
- * translation (from games/<game>/lang/<code>.txt) in its place, so every
+ * translation (from localized source files) in its place, so every
  * file carries only its own language. Sources and translations are UTF-8.
  *
  * Drawing them, each game with its own font:

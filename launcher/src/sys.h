@@ -21,16 +21,11 @@ typedef struct {
 const np_userland_t *np_userland(void);
 int np_software_major(void);  /* 0 if unknown */
 /* Upsilon, the N0110 and N0115's custom software: its header has no device
- * name, and it has none of the system calls for Home, checksums or flash */
+ * name, and it has no extra system calls beyond the runtime hooks */
 bool np_upsilon(void);
 /* an N0110 or N0115 (216 MHz), not the N0120 (550 MHz) */
 bool np_slow_model(void);
 
-uint32_t np_crc32_bytes(const void *data, uint32_t len);
-uint32_t np_crc32_words(const uint32_t *data, uint32_t words);
-int np_battery_level(void);   /* 0 empty .. 3+ full, -1 unknown */
-bool np_battery_charging(void);
-bool np_flash_erase_sector(int sector);
 /* While locked, the Home key cannot interrupt the app (Epsilon's circuit
  * breaker), so a critical section runs to its end. */
 void np_interrupts_lock(void);
@@ -39,8 +34,7 @@ void np_interrupts_unlock(void);
  * must be followed by `return` from main. */
 void np_session_begin(void);
 int np_session_end(void);
-bool np_flash_write(void *dst, const void *src, uint32_t len);
-/* eadk_display_draw_string, also on Upsilon (launcher/src/compat.c); the games' calls come here */
+/* Display compatibility hook. */
 void np_display_draw_string(const char *text, eadk_point_t point, bool large_font, eadk_color_t text_color,
                             eadk_color_t background_color);
 #endif

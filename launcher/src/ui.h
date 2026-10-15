@@ -2,14 +2,8 @@
 #define NP_UI_H
 #include "gfx.h"
 
-#define SHOT_W 192
-#define SHOT_H 144
-
 /* Sets up the launcher's buffers in the arena (again after each game). */
 void ui_init(void);
-/* Decoded screenshot (palette indices), or NULL if it cannot be decoded. */
-const uint8_t *ui_shot(int game, int shot);
-
 /* Key presses with auto-repeat for held arrows. */
 typedef struct {
   uint32_t held, since, next;

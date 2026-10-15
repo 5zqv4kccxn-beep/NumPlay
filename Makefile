@@ -4,7 +4,7 @@ ARM_STRIP ?= arm-none-eabi-strip
 B := build
 VERSION := $(shell cat VERSION)
 EADK_CFLAGS := $(shell $(NWLINK) eadk-cflags-device)
-ARM_CFLAGS := -std=gnu11 $(EADK_CFLAGS) -DNP_VERSION='"$(VERSION)"' -Os -Wall -Wextra -Wno-unused-parameter -Ilauncher/src
+ARM_CFLAGS := -std=gnu11 -mthumb -mfloat-abi=hard -mcpu=cortex-m7 -mfpu=fpv5-sp-d16 $(EADK_CFLAGS) -DPLATFORM_DEVICE=1 -DNP_VERSION='"$(VERSION)"' -Os -Wall -Wextra -Wno-unused-parameter -Ilauncher/src
 ARM_LINK := -nostartfiles --specs=nano.specs -Wl,--relocatable -Wl,--gc-sections -Wl,-e,main -Wl,-u,eadk_app_name -Wl,-u,eadk_app_icon
 SOURCES := $(wildcard launcher/src/*.c)
 HEADERS := $(wildcard launcher/src/*.h) launcher/src/reader_docs.h VERSION

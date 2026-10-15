@@ -23,7 +23,7 @@
   })
 
 /* 1 for Epsilon's header, 2 for Upsilon's (no device name: the footer two words sooner, then
- * Omega's magic; and none of the system calls for Home, checksums or flash), 0 if neither */
+ * Omega's magic; and none of the system calls for Home, checksums or storage), 0 if neither */
 static int header_kind(uint32_t address) {
   /* the userland header sits at the start of the userland, after the kernel
    * (and an optional extra data sector) of either firmware slot */
@@ -46,7 +46,7 @@ const np_userland_t *np_userland(void) {
   static bool done;
   if (done) return cached;
   done = true;
-  /* Only external flash is probed: it exists on every model (RAM addresses
+  /* Only external storage is probed: it exists on every model (RAM addresses
    * differ between models, and reading a missing one faults). */
   static const uint32_t candidates[] = {0x90010000, 0x90020000, 0x90410000, 0x90420000};
   for (unsigned i = 0; i < 4; i++) {
@@ -70,7 +70,7 @@ bool np_slow_model(void) {
 }
 
 /* The whole session runs with Home held back (Epsilon's circuit breaker),
- * and ends with the app's RAM cleared: see games/common/epsilon_app.h. */
+ * and ends with the app's RAM cleared: see application runtime. */
 extern char _data_section_start_ram[], _heap_end[];
 static bool session_locked;
 
@@ -88,12 +88,6 @@ int np_session_end(void) {
   return 0;
 }
 
-uint32_t np_crc32_bytes(const void *data, uint32_t len) { return len ? SVC2(15, data, len) : 0; }
-uint32_t np_crc32_words(const uint32_t *data, uint32_t words) { return SVC2(16, data, words); }
-int np_battery_level(void) { return (int)(SVC2(4, 0, 0) & 0xFF); }
-bool np_battery_charging(void) { return (SVC2(3, 0, 0) & 0xFF) != 0; }
-bool np_flash_erase_sector(int sector) { return (SVC2(30, sector, 1) & 0xFF) != 0; }
-bool np_flash_write(void *dst, const void *src, uint32_t len) { return (SVC4(32, dst, src, len, 1) & 0xFF) != 0; }
 void np_interrupts_lock(void) {
   if (!np_upsilon()) SVC2(10, 0, 0);
 }
@@ -104,24 +98,6 @@ void np_interrupts_unlock(void) {
 #else /* simulator */
 
 const np_userland_t *np_userland(void) { return 0; }
-uint32_t np_crc32_bytes(const void *data, uint32_t len) {
-  (void)data, (void)len;
-  return 0;
-}
-uint32_t np_crc32_words(const uint32_t *data, uint32_t words) {
-  (void)data, (void)words;
-  return 0;
-}
-int np_battery_level(void) { return -1; }
-bool np_battery_charging(void) { return false; }
-bool np_flash_erase_sector(int sector) {
-  (void)sector;
-  return false;
-}
-bool np_flash_write(void *dst, const void *src, uint32_t len) {
-  (void)dst, (void)src, (void)len;
-  return false;
-}
 void np_interrupts_lock(void) {}
 void np_interrupts_unlock(void) {}
 void np_session_begin(void) {}

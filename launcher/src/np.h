@@ -38,31 +38,8 @@ uint32_t np_arena_room(void);     /* the arena and the RAM after it, up to the e
 void *np_alloc(uint32_t size);    /* bump allocator in the arena */
 void np_alloc_reset(void);
 
-/* ---- storage (storage.c): Epsilon's record file system */
-bool np_storage_delete(const char *name);   /* true if gone (or never there) */
-uint32_t np_storage_record_size(const char *name);
-/* a record's content (NULL if none), and writing one: for the games too */
-const uint8_t *np_file_read(const char *name, uint32_t *len);
-bool np_file_write(const char *name, const void *data, uint32_t len);
-/* deletes a game's progress (np_game_t.progress); true if all of it is gone */
-bool np_reset_game(int game);
+/* The Tableur application has no game catalogue or game storage API. */
 
-/* NumPlay's own settings, in the file numplay.set */
-enum { NP_SECRET_XNT, NP_SECRET_VAR, NP_SECRET_TOOLBOX, NP_SECRET_PI, NP_SECRET_SQRT, NP_SECRET_MENU, NP_SECRET_KONAMI, NP_SECRET_COUNT };
-typedef struct {
-  bool disguise;  /* start as Matrices, a calculator app; NumPlay opens through the secret */
-  uint8_t secret; /* NP_SECRET_* */
-  bool hint;      /* Matrices names the secret in light gray, bottom left */
-} np_config_t;
-void np_config_load(np_config_t *c);
-bool np_config_save(const np_config_t *c);
-bool np_bg_load(int *mode);   /* the home screen's live background chosen last; false when none was saved */
-bool np_bg_save(int mode);
-/* A copy of every save in numplay_saves.py, a Python script: the only kind of
-   file the NumWorks installer keeps when NumPlay is updated. */
-void np_progress_backup(void);
-void np_progress_restore(void); /* only when none of the saves are left */
-/* Matrices, the disguise: true when the secret was used (open NumPlay), false to quit */
 int np_sheet(void);
 int np_home(int *selected, bool returning);
 
